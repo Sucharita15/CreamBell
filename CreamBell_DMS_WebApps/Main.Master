@@ -1,0 +1,508 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="CreamBell_DMS_WebApps.Main" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <%--<link rel="shortcut icon" href="#" />--%>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CBSAM Portal
+    </title>
+    <link href="css/DropDown.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="Javascript/BackButtonDisable.js"></script>
+    <script src="jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="jquery/jquery.searchabledropdown-1.0.8.min.js" type="text/javascript"></script>
+    <script src="Javascript/BackButtonDisable.js"></script>
+    <%--<script type="text/javascript">
+        function GetDateTime() {
+        }
+        var flag = false;
+        // Load for page, run once in ajax, run every page load in normal page
+        $(document).ready(function () {
+            $("select").searchable();
+        });
+        // Load run each ajax callback 
+        function pageLoad() {
+            if (flag == false) {
+                $("select").searchable();
+            } else {
+                flag = false;
+            }
+        };
+    </script>--%>
+
+    <style>
+        /* General menu styling */
+        .nav {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            /* line-height: 15px;*/
+            z-index: 1000;
+            font-size: 13px;
+        }
+            /* The main navigation link containers */
+            .nav > li {
+                display: block;
+                float: left; /* Displaying them on the same line */
+                margin: 0;
+                padding: 0;
+                font-size: 12px;
+            }
+                /* The main navigation links */
+                .nav > li > a {
+                    /* Layout */
+                    display: block;
+                    position: relative;
+                    padding: 10px 20px;
+                    /* Text */
+                    font-size: 13px;
+                    text-decoration: none;
+                    background: #fff; /* Top menu items background colour */
+                    color: darkblue;
+                    border-bottom: 0px solid #4c99cc;
+                    /* Background */
+                    /* 
+                    background: rgba(0, 0, 0, .6);  Transparent background for modern browsers */
+                    /* Making the color to change on hover with a transition 
+                    -webkit-transition: color .3s ease-in;
+                    -moz-transition: color .3s ease-in;
+                    -o-transition: color .3s ease-in;
+                    -ms-transition: color .3s ease-in;
+                        color: #fff;
+                        background: #4c99cc;
+                    */
+                }
+                    /* Changing the color on hover */
+                    .nav > li > a:hover, .nav > li:hover > a {
+                        background: #36f; /* Top menu items background colour */
+                        color: #fff;
+                        border-bottom: 1px solid #03f;
+                        width: auto;
+                    }
+            /* The links which contain dropdowns menu are wider, because they have a little arrow */
+            .nav > .dropdown > a {
+                padding: 10px 24px 10px 23px;
+            }
+        /* The arrow indicating the dropdown */
+        .dropdown > a::after {
+            content: "";
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            width: inherit;
+            height: 7px;
+            width: auto;
+            /*-webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff;*/
+        }
+        /* Changing the color of the arrow on hover */
+        .dropdown > a:hover::after, .dropdown:hover > a::after {
+            border-color: #CDE2F1;
+        }
+        /* The submenus */
+        .nav ul {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: block;
+        }
+            /* General layout settings for the link containers of the submenus */
+            .nav ul li {
+                position: absolute;
+                top: -9999px; /* Hiding them */
+                height: auto;
+                width: auto;
+                display: block;
+                margin: 0;
+                padding: 0;
+                /* Making them to expand their height with a transition, for a slide effect */
+                /*-webkit-transition: height .2s ease-in;
+                -moz-transition: height .2s ease-in;
+                -o-transition: height .2s ease-in;
+                -ms-transition: height .2s ease-in;*/
+            }
+        /* Displays the submenu links, by expading their containers (with a transition, previously defined) and by repositioning them */
+        .dropdown:hover > ul > li {
+            height: 30px;
+            position: relative;
+            top: auto;
+        }
+        /* The submenu links */
+        .nav ul li a {
+            /* Layout */
+            padding: 8px 20px;
+            width: 230px;
+            display: block;
+            position: relative;
+            /* Text */
+            text-decoration: none;
+            font-size: 13px;
+            /* Background & effects */
+            background: #ddd;
+            border-bottom: 1px solid #ddd;
+            /*
+                background: rgba(0, 0, 0, .75);
+                */
+            /* -webkit-transition: color .3s ease-in, background .3s ease-in;
+            -moz-transition: color .3s ease-in, background .3s ease-in;
+            -o-transition: color .3s ease-in, background .3s ease-in;
+            -ms-transition: color .3s ease-in, background .3s ease-in;*/
+        }
+            /* Changing the link's color and background on hover */
+            .nav ul li:hover > a, .nav ul li a:hover {
+                background: #36f; /* Top menu items background colour */
+                color: #fff;
+                border-bottom: 1px solid #03f;
+            }
+        /* Making the level 2 (or higher) submenus to appear at the right of their parent */
+        .nav ul .dropdown:hover ul {
+            left: 270px;
+            top: 0px;
+        }
+        /* The submenu links have a different arrow which indicates another dropdown submenu */
+        .nav ul .dropdown a::after {
+            width: 6px;
+            height: 6px;
+            border-bottom: 0;
+            border-right: 1px solid #fff;
+            border-top: 1px solid #fff;
+            top: 12px;
+        }
+        /* Changing the color of the arrow on hover */
+        .nav ul .dropdown:hover > a::after, .nav ul .dropdown > a:hover::after {
+            border-right: 1px solid #0fd0f9;
+            border-top: 1px solid #0fd0f9;
+        }
+
+        .auto-style1 {
+            width: 44px;
+            height: 22px;
+        }
+
+        #header, #Menu {
+            width: 100%;
+            float: left;
+        }
+option { min-height: inherit; padding: 8px 2px 8px; font-size:14px; }
+        *, *:before, *:after {
+            -webkit-box-sizing: inherit !important;
+            -moz-box-sizing: inherit !important;
+            box-sizing: inherit !important;
+        }
+	.form-control{ height:auto !important;}
+        input {
+        border: 1px solid #7d6754;
+    border-radius: 4px;
+    height: auto;}
+            input[type=image] {width: 25px;
+    height: auto;
+    vertical-align: middle;
+             }
+
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: white" ondragstart="return false;" ondrop="return false;">
+    <form id="form1" runat="server">
+        <%--<asp:ToolkitScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="36000"></asp:ToolkitScriptManager>--%>
+        <asp:ToolkitScriptManager ID="ScriptManager1" runat="server" ></asp:ToolkitScriptManager>
+        <div class="wrapper">
+            <div id="header" class="headertopstrip">
+                <div style="width: 100%">
+                    <div class="customername">
+                        <asp:Label ID="LblHeader" runat="server" Text="Distrubuter/FirmName"></asp:Label>
+                    </div>
+                    <div class="customeraddress">
+                        <asp:Label ID="lblAddress" runat="server" Text="Address" ForeColor="White" Font-Size="Medium" TabIndex="20"></asp:Label>
+                    </div>
+                    <div class="customerblank">
+                        <asp:Label ID="LblServerdt" runat="server" ForeColor="White" Font-Size="Medium" Font-Names="Seoge WP" TabIndex="14" />
+                        <asp:Label ID="LblServerTime" runat="server" ForeColor="White" Font-Size="Medium" Font-Names="Seoge WP" TabIndex="15" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="Menu">
+                <div class="top_menu">
+                    <ul class="nav">
+                        <li>
+                            <img alt="" src="Images/512x512.png" style="height: 40px; width: 50px" />
+                        </li>
+                        <%--<li id="linkHome" runat="server"><a href="Home.aspx">Home</a>--%>
+                        <li id="linkHome" runat="server" visible="false"><a href="frmDashboard.aspx">Home</a>
+                        </li>
+                        <li id="linkProfile" runat="server" visible="false"><a href="frmUserProfile.aspx">Profile</a>
+                        </li>
+                        <%--<li id="linkMaster" class="dropdown"><a href="frmCustomerPartyMaster.aspx">Master</a>--%>
+                        <li id="linkMaster" class="dropdown"><a href="#">Master</a>
+                            <ul>
+                                <li id="linkCustomerPartyMaster" runat="server" visible="false"><a href="frmCustomerPartyMaster.aspx">Customer/Party Master</a></li>
+                                <li id="linkCartOperatorMaster" runat="server" visible="false"><a href="frmCartOperatorMaster.aspx">Customer Operator Master</a></li>
+                                <li id="linkCustomerPartyGroup" runat="server" visible="false"><a href="frmCustomerPartyGroup.aspx">Customer/Party Group</a></li>
+                                <li id="linkProductMaster" runat="server" visible="false"><a href="frmProductMaster.aspx">Product Master</a></li>
+                                <li id="linkDamageReasonCode" runat="server" visible="false"><a href="frmDamageReasonCode.aspx">Damage Reason Code</a></li>
+                                <li id="linkVersionInfo" runat="server" visible="false"><a href="frmVersionInfo.aspx">Version Info </a></li>
+                                <li id="linkVersionReleaseInfo" runat="server" visible="false"><a href="frmVersionReleaseInfo.aspx">Version Release </a></li>
+                                <li id="linkTemplate" runat="server" visible="false"><a href="frmTemplatePage.aspx">Template Page</a></li>
+                                <li id="linkNotificationMaster" runat="server" visible="true"><a href="frmNotificationMaster.aspx">Notification Master</a></li>
+                                <li id="linkUserLoginDetails" runat="server" visible="false"><a href="frmUserLoginDetails.aspx">User Login Details</a></li>
+                                <li id="linkCompetitiorDetail" runat="server" visible="false"><a href="frmCompetitiorDetail.aspx">Competitior Details</a></li>
+                                <li id="linkImageUpload" runat="server" visible="false"><a href="frmImageUpload.aspx">Upload Image</a></li>
+                                <li id="linkSecondaryDiscountUpload" runat="server" visible="false"><a href="frmsecondarydiscountupload.aspx">Secondary Discount Upload</a></li>
+                            </ul>
+                        </li>
+                        <%--<li id="linkHierarchy" class="dropdown"><a href="frmPSRDistributorLinkingMaster.aspx">Hierarchy</a>--%>
+                        <li id="linkHierarchy" class="dropdown"><a href="#">Hierarchy</a>
+                            <ul>
+                                <li id="linkPSRDistributorLinkingMaster" runat="server" visible="false"><a href="frmPSRDistributorLinkingMaster.aspx">PSR-Distributor Linking</a></li>
+                                <li id="linkPSRBeatMaster" runat="server" visible="false"><a href="frmPSRBeatMaster.aspx">PSR-Beat Master</a></li>
+                                <li id="linkPSRCustomerMaster" runat="server" visible="false"><a href="frmPSRCustomerMaster.aspx">PSR-Customer Master</a></li>
+                                <li id="linkSalesHierarchy" runat="server" visible="false"><a href="frmSalesHierarchy.aspx">Sale Hierarchy Master</a></li>
+                            </ul>
+                        </li>
+                        <%--15--%>
+                        <li id="linkStock" class="dropdown"><a href="#">Stock</a>
+                            <ul>
+                                <li id="StockOpening" runat="server" visible="false"><a href="frmExcelUploadAdj.aspx">Opening Stock Upload</a></li>
+                                <li id="linkCurrentStock" runat="server" visible="false"><a href="frmCurrentStock.aspx">Current Stock</a></li>
+                                <li id="linkStockAdjustment" runat="server" visible="false"><a href="frmStockAdjustment.aspx">Stock Adjustment</a></li>
+                                <li id="linkStockLocationTransfer" runat="server" visible="false"><a href="frmStockLocationTransfer.aspx">Stock Transfer</a></li>
+                                <li id="linkStockMoveToNonSaleable" runat="server" visible="false"><a href="frmStockMoveToNonSaleable.aspx">Stock Movement(Primary-NonSaleable)</a></li>
+                                <li id="linkProductDistructionNote" runat="server" visible="false"><a href="frmProductDistructionNote.aspx">Primary Destruction Note</a></li>
+                                <li id="linkSecondaryDistructionNote" runat="server" visible="false"><a href="frmSecondaryDistructionNote.aspx">Secondary Destruction Note</a></li>
+                                <li id="linkStockMovementReport" runat="server" visible="false"><a href="frmStockMovementReport.aspx">Stock Movement Report</a></li>
+                                <li id="linkStockLedgerReport" runat="server" visible="false"><a href="frmStockLedgerReport.aspx">Stock Ledger Report</a></li>
+                                <li id="linkfrmVRSMeltage" runat="server" visible="false"><a href="frmVRSMeltage.aspx">Vending Meltage</a></li>
+                            </ul>
+                        </li>
+                        <%--<li id="linkPrimary" class="dropdown"><a href="frmPurchaseIndentList.aspx">Primary</a>--%>
+                        <li id="linkPrimary" class="dropdown"><a href="#">Primary</a>
+                            <ul>
+                                <li id="linkPurchaseIndentList" runat="server" visible="false"><a href="frmPurchaseIndentList.aspx">Purchase Indent List</a></li>
+                                <li id="linkPurchaseIndent" runat="server" visible="false"><a href="frmPurchaseIndent.aspx">Purchase Indent</a></li>
+                                <li id="linkPurchaseInvoiceReceipt" runat="server" visible="false"><a href="frmPurchaseInvoiceReceipt.aspx">Purchase Invoice Receipt</a></li>
+                                <li id="linkPurchaseInvoiceReceiptManual" runat="server" visible="false"><a href="frmPurchaseInvoiceReceiptManual.aspx">Purchase Invoice Receipt Manual</a></li>
+                                <li id="linkPurchUnPostList" runat="server" visible="false"><a href="frmPurchUnPostList.aspx">Purchase Invoice Unposted List</a></li>
+                                <li id="linkPurchReceiptList" runat="server" visible="false"><a href="frmPurchReceiptList.aspx">Purchase Invoice Posted List</a></li>
+                                <li id="linkPurchaseReversal" runat="server" visible="false"><a href="frmPurchaseReversal.aspx">Purchase Reversal</a></li>
+                                <li id="linkPendingPurchaseReciept" runat="server" visible="false"><a href="frmPendingPurchaseReciept.aspx">Pending Purchase Reciept</a></li>
+                                <li id="linkPurchaseReturnList" runat="server" visible="false"><a href="frmPurchaseReturnList.aspx">Purchase Return List</a></li>
+                                <li id="linkDistributorIncentiveReport" runat="server" visible="false"><a href="frmDistributorIncentiveReport.aspx">Sale Auto Expense Creation</a></li>
+                                <li id="linkPurchaseAutoClaim" runat="server" visible="false"><a href="frmPurchaseAutoClaim.aspx">Purchase Auto Expense Creation</a></li>
+                                <li id="linkfrmManualClaim" runat="server" visible="false"><a href="frmManualClaim.aspx">Manual Expense Creation</a></li>
+                                <li id="linkFOCPurchaseInvoice" runat="server" visible="false"><a href="frmFOCPurchaseInvoice.aspx">FOC Purchase Invoice</a></li>
+
+                                <li id="linkPOPInventoryReceipt" runat="server" visible="false"><a href="frmPOPInventoryReceipt.aspx">POP Purchase Invoice Receipt</a></li>
+                                <li id="linkAdjestmentEntry" runat="server" visible="false"><a href="frmAdjustmentEntry.aspx">Adjustment Entry</a></li>
+                                <li id="linkPaymentEntry" runat="server" visible="false"><a href="frmVenderPayment.aspx">Payment Entry</a></li>
+                                <li id="linkExpenseCalcculation" runat="server" visible="false"><a href="frmExpenseCalculation.aspx">Expense Calculation</a></li>
+                                <li id="linkVendingExpenseCalculation" runat="server" visible="false"><a href="frmVendingExpenseCalculation.aspx">Vending Expense Calculation</a></li>
+                                <li id="linkIndentConsolidationToSO" runat="server" visible="false"><a href="frmIndentConsolidationToSO.aspx">Indent Consolidation </a></li>
+                            </ul>
+                        </li>
+                        <%--42--%>
+                        <%--<li id="linkSecondary" class="dropdown"><a href="frmSaleOrder.aspx">Secondary</a>--%>
+                        <li id="linkSecondary" class="dropdown"><a href="#">Secondary</a>
+                            <ul>
+                                <li id="linkSaleOrder" runat="server" visible="false"><a href="frmSaleOrder.aspx">Manual Sales Order</a></li>
+                                <li id="linkSalesOrderPreList" runat="server" visible="false"><a href="frmSalesOrderPreList.aspx">UnPosted Sale Order</a></li>
+                                <li id="linkLoadSheetCreation" runat="server" visible="false"><a href="frmLoadSheetCreation.aspx">Load Sheet Creation</a></li>
+                                <li id="linkLoadSheetList" runat="server" visible="false"><a href="frmLoadSheetList.aspx">Load Sheet List</a></li>
+                                <li id="linkInvoicePrepration" runat="server" visible="false"><a href="frmInvoicePrepration.aspx">Invoice Preparation</a></li>
+                                <%-- <li id="linkFOCInvoiceSave" runat="server" Visible="false"><a href="frmFOCInvoiceSave.aspx">FOC Invoice Generation</a></li>--%>
+                                <li id="linkSaleInvoiceReturn" runat="server" visible="false"><a href="frmSaleInvoiceReturn.aspx">Sale Reversal</a></li>
+                                <li id="linkSOCreationIndent" runat="server" visible="false"><a href="frmSOCreationIndent.aspx">SD Indent List</a></li>
+                                <li id="linkPOPInventoryIssueToPSR" runat="server" visible="false"><a href="frmPOPInventoryIssueToPSR.aspx">POP Inventory Issue</a></li>
+                                <li id="linkVDAttendence" runat="server" visible="false"><a href="frmVendorAttendance.aspx">VD Attendance</a></li>
+                                <li id="linkServiceInvoice" runat="server" visible="true"><a href="frmServiceInvoicing.aspx">Service Invoice Generation</a></li>
+                                <li id="linkServiceInvoiceReversal" runat="server" visible="false"><a href="frmServiceInvoiceReversal.aspx">Service Invoice Reversal</a></li>
+                            </ul>
+                        </li>
+                        <%--<li id="linkReport" class="dropdown"><a href="frmPartyWiseSchemeDetailsonPurchaseRaterReport.aspx">Reports</a>--%>
+                        <li id="linkReport" class="dropdown"><a href="#">Reports</a>
+                            <ul>
+                                <li class="dropdown"><a href="#">DMS Reports</a>
+                                    <ul>
+                                        <li id="linkReportSalesInvoice" runat="server" visible="false"><a href="ReportSalesInvoice.aspx">Sale Invoice</a></li>
+                                        <li id="linkReportServiceInvoice" runat="server" visible="true"><a href="frmReportServiceInvoice.aspx">Report Service Invoice</a></li>
+                                        <li id="linkCreditNote" runat="server" visible="false"><a href="frmCreditNoteReport.aspx">Credit Note</a></li>
+                                        <li id="linkDebitNote" runat="server" visible="false"><a href="frmDebitNoteReport.aspx">Debit Note</a></li>
+                                        <li id="linkReportSaleInvoiceOld" runat="server" visible="false"><a href="ReportSalesInvoice_Old.aspx">Sale Invoice Old Format</a></li>
+                                        <li id="linkItemWiseSaleDetail" runat="server" visible="false"><a href="frmItemWiseSaleDetail.aspx">Sale Summary</a></li>
+                                        <%--<li id="linkRunningSchemeDetail" runat="server" Visible="false"><a href="frmRunningSchemeDetail.aspx">Running Scheme Detail</a></li>--%>
+                                        <li id="linkRunningSchemeDetailNew" runat="server" visible="false"><a href="frmRunningSchemeDetailNew.aspx">Running Scheme Detail</a></li>
+                                        <%-- <li id="linkDiscountView" runat="server" Visible="false"><a href="frmDiscountView.aspx">Discount View</a></li>--%>
+                                        <li id="linkDiscountViewNew" runat="server" visible="true"><a href="frmDiscountViewNew.aspx">Discount View</a></li>
+                                        <%--<li id="linkOpenSalesOrderReport" runat="server" Visible="false"><a href="frmOpenSalesOrderReport.aspx">Sales Order Detail</a></li>--%>
+                                        <li id="linkfrmSaleOrderDetails" runat="server" visible="true"><a href="frmSaleOrderDetails.aspx">Sales Order Detail</a></li>
+                                        <%--<li id="linkfrmSaleOrderDetailsNew" runat="server" visible="true"><a href="frmSaleOrderDetailsNew.aspx">Sales Order Detail New</a></li>--%>
+                                        <li id="linkItemSKUWise" runat="server" visible="false"><a href="frmItemSKUWise.aspx">SKU Wise Sale</a></li>
+                                        <li id="linkSaleRegister" runat="server" visible="false"><a href="frmSaleRegister.aspx">Sale Register Excel</a></li>
+                                        <li id="linkSyncData" runat="server" visible="false"><a href="frmMobileAppSyncReport.aspx">Sync Data</a></li>
+                                        <li id="linkFOCSaleInvoiceReport" runat="server" visible="false"><a href="frmFOCSaleInvoiceReport.aspx">FOC SaleInvoice Report</a></li>
+                                        <li id="linkPurchaseReceiptReport" runat="server" visible="false"><a href="frmPurchaseReceiptReport.aspx">Purchase Receipt Report</a></li>
+                                        <li id="linkSSRSOrderKPI" runat="server" visible="false"><a href="frmSSRSOrderKPI.aspx">SSRS Order KPI</a></li>
+                                    </ul>
+                                </li>
+                                <%--62--%>
+                                <li class="dropdown"><a href="#">Transaction Reports</a>
+                                    <ul>
+                                        <%--<li id="linkSaleRegisterDateWiseReport" runat="server" Visible="false"><a href="frmSaleRegisterDateWiseReport.aspx">Date Wise Sale Register</a></li>--%>
+                                        <li id="linkSaleRegisterDateWiseReportNew" runat="server" visible="true"><a href="frmSaleRegisterDateWiseReportNew.aspx">Date Wise Sale Register</a></li>
+                                        <%--<li id="linkSaleRegister1" runat="server"><a href="frmSaleRegister.aspx">Sale Register Report</a></li>--%>
+                                        <li id="linkDailySaleRegister" runat="server" visible="false"><a href="frmDailySaleRegister.aspx">Daily Sale Register</a></li>
+                                        <li id="linkMonthlySaleRegister" runat="server" visible="false"><a href="frmMonthlySaleRegister.aspx">Monthly Sale Register</a></li>
+                                        <li id="linkSalePartyItemWise" runat="server" visible="false"><a href="frmSalePartyItemWise.aspx">Sale Report Party/Item Wise</a></li>
+                                        <li id="linkSaleRegisterInvoiceWise" runat="server" visible="false"><a href="frmSaleRegisterInvoiceWise.aspx">Sale Register Invoice Wise</a></li>
+                                        <li id="linkSaleRegisterItemWise" runat="server" visible="false"><a href="frmSaleRegisterItemWise.aspx">Sale Register Item Wise</a></li>
+                                        <li id="linkSaleRegisterPartyWise" runat="server" visible="false"><a href="frmSaleRegisterPartyWise.aspx">Sale Register Party Wise</a></li>
+                                        <li id="linkPartyWiseSaleSummary" runat="server" visible="false"><a href="frmPartyWiseSaleSummary.aspx">Party Wise Sale Summary</a></li>
+                                        <li id="linkItemTypeWiseSaleReport" runat="server" visible="false"><a href="frmItemTypeWiseSaleReport.aspx">Item Type Wise Sale</a></li>
+                                        <li id="linkPartyWiseSaleReport" runat="server" visible="false"><a href="frmPartyWiseSaleReport.aspx">Party Wise Sale</a></li>
+                                        <li id="linkItemWisePartySaleSummary" runat="server" visible="false"><a href="frmItemWisePartySaleSummary.aspx">Item Wise Party Sale Summary</a></li>
+                                        <li id="linkVRSTransactionDetails" runat="server" visible="false"><a href="frmVRSTransactionDetails.aspx">VRS Transaction Detail</a></li>
+                                        <li id="linkfrmCollectionReport" runat="server" visible="false"><a href="frmCollectionReport.aspx">Collection Report</a></li>
+                                        <li id="linkSchemeDataReport" runat="server" visible="false"><a href="frmSchemeDataReport.aspx">Scheme Data</a></li>
+                                        <li id="linkDestructionReport" runat="server" visible="false"><a href="frmDistructionReport.aspx">Destruction Report</a></li>
+                                        <li id="linkVDAttendanceReport" runat="server" visible="false"><a href="frmVRSVDAttendanceReport.aspx">VRS-VD Attendance Report</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown"><a href="#">Inventory Reports</a>
+                                    <ul>
+                                        <li id="linkPurchaseRegister" runat="server" visible="false"><a href="frmPurchaseRegister.aspx">Purchase Register Report</a></li>
+                                        <li><a href="#"></a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Financial Reports</a>
+                                    <ul>
+                                        <li id="lnkCustomerOutstandingReport" runat="server" visible="false"><a href="frmCustomerOutstandingReport.aspx">Customer Outstanding Report</a></li>
+                                        <li id="linkDayBook" runat="server" visible="false"><a href="frmCollectionReport1.aspx">Day Book Report</a></li>
+                                        <li id="linkOutStandingAgingReport" runat="server" visible="false"><a href="frmOutStandingAgingReport.aspx">Outstanding Report Age Wise</a></li>
+
+                                        <li id="linkVatReport" runat="server" visible="false"><a href="frmVatReport.aspx">Vat Reports</a></li>
+                                        <li id="linkAdjustmentEntryReport" runat="server" visible="false"><a href="frmAdjustmentEntryReport.aspx">Adjustment Entry Report</a></li>
+                                        <li id="linkPSRDSRReport" runat="server" visible="false"><a href="frmPSRDSRReport.aspx">PSR_DSR Report</a></li>
+                                        <li id="linkPriceMasterReport" runat="server" visible="false"><a href="frmPriceMasterReport.aspx">Price Master Report</a></li>
+                                        <li id="linkVenderLedger" runat="server" visible="false"><a href="frmVenderLedger.aspx">Vendor Ledger Report</a></li>
+                                        <li id="linkGSTR1" runat="server" visible="false"><a href="frmGSTR1Page.aspx">GSTR Report</a></li>
+                                    </ul>
+                                </li>
+                                <%--86--%>
+                            </ul>
+                        </li>
+                        <%--<li id="linkMisReports" class="dropdown"><a href="frmDiscountPartyWiseReport.aspx">MIS Reports</a>--%>
+                        <li id="linkMisReports" class="dropdown"><a href="#">MIS Reports</a>
+                            <ul>
+                                <li id="linkDiscountPartyWiseReport" runat="server"><a href="frmDiscountPartyWiseReport.aspx">Discount Party Wise Report</a></li>
+                                <li id="linkNonBuyerReport" runat="server"><a href="frmNonBuyerReport.aspx">Non Buyer Report</a></li>
+                                <li id="linkKeyCustomerSale" runat="server"><a href="frmKeyCustomerSale.aspx">Key Customer Sale</a></li>
+                                <li id="linkSaleRankingReport" runat="server" visible="false"><a href="frmSaleRankingReport.aspx">Sale Ranking Report</a></li>
+                                <li id="linkAreaMonthMaterialSale" runat="server" visible="false"><a href="frmAreaMonthMaterialSale.aspx">Area Month Material Sale</a></li>
+                                <li id="linkPSRWiseSalesReport" runat="server" visible="false"><a href="frmPSRWiseSalesReport.aspx">PSRWise Sales Report</a></li>
+                                <li id="linkProductContributionReport" runat="server" visible="false"><a href="frmProductContributionReport.aspx">Product Contribution Report</a></li>
+                                <li id="linkTargetVsAchivement" runat="server" visible="false"><a href="frmTargetVsAchivement.aspx">Target Vs Achivement</a></li>
+                                <li id="linkReachReport" runat="server" visible="false"><a href="frmReachReport.aspx">Reach Report</a></li>
+                                <li id="linkYTDReport" runat="server" visible="false"><a href="frmYTDReport.aspx">Month Closing Sale Report</a></li>
+                                <li id="linkDailySaleTrackingReport" runat="server" visible="false"><a href="frmDailySaleTrackingReport.aspx">Daily Sale Tracking</a></li>
+                                <li id="linkFocusProductSale" runat="server" visible="false"><a href="frmFocusProductSale.aspx">Focus Product Sale</a></li>
+                                <li id="linkCustomerLedger" runat="server" visible="false"><a href="frmCustomerLedger.aspx">Customer Ledger</a></li>
+                                <li id="linkPOPInventoryTransactionReport" runat="server" visible="false"><a href="frmPOPInventoryTransactionReport.aspx">POP Inventory Issue Transaction Report </a></li>
+                                <li id="linkVersionReleaseRegister" runat="server" visible="false"><a href="frmVersionReleaseRegister.aspx">Version Release Register</a></li>
+                                <li id="linkVendingExpensesReport" runat="server" visible="false"><a href="frmVendingExpensesReport.aspx">Vending Expenses Report</a></li>
+                                <li id="linkIndentVsInvoiceReport" runat="server" visible="false"><a href="frmIndentVSInvoice.aspx">Indent VS Invoice</a></li>
+                                <li id="linkUseNonUserReport" runat="server" visible="false"><a href="frmUseNouseReport.aspx">Use/Non Use Report</a></li>
+                                <li id="linkRetailerStatusReport" runat="server" visible="false"><a href="frmRetailerStatusreport.aspx">Retailer Status Report</a></li>
+                                <li id="linkEWAYBillReport" runat="server" visible="false"><a href="frmEWAYBillReport.aspx">Eway Bill Report</a></li>
+                                <li id="linkDeepFreezerSalesReport" runat="server" visible="true"><a href="FrmDeepFreezerSalesReport.aspx">Deep Freezer Sales Report</a></li>
+                                <li id="linkSaleRegisterProductGroupReport" runat="server" visible="true"><a href="frmSaleRegisterProductGroupReport.aspx">Sale Register Product Group Report</a></li>
+                                <li id="linkVendingPurchaseReport" runat="server" visible="true"><a href="frmVendingPurchaseReport.aspx">Vending Purchase Report</a></li>
+                                <li id="linkBulkBuyerReport" runat="server" visible="true"><a href="frmBulkBuyerReport.aspx">Bulk Buyer Report</a></li>
+                                <li id="linkCustomerWiseSaleReport" runat="server" visible="true"><a href="frmCustomerWiseSaleReport.aspx">Customer Wise Sale Report</a></li>
+                            </ul>
+                        </li>
+                        <%--104--%>
+                        <%--<li id="linkClaim" class="dropdown"><a href="frmPartyWiseSaleSummaryDisc.aspx">Claim Report</a>--%>
+                        <li id="linkClaim" class="dropdown"><a href="#">Expense Report</a>
+                            <ul style="width: 263px;">
+                                <li id="linkDiscountedOutletSale" runat="server" visible="false"><a href="frmPartyWiseSaleSummaryDisc.aspx">Discounted Outlet Sale</a></li>
+                                <li id="linkConsolidatedSaleRegister" runat="server" visible="false"><a href="frmSaleRegisterReport.aspx">Consolidated Sale Register</a></li>
+                                <li id="linkConsolidatedPurchaseRegister" runat="server" visible="false"><a href="frmPurchaseRegisterReport.aspx">Consolidated Purchase Register</a></li>
+                                <li id="linkPopPurchaseRegisterReport" runat="server" visible="false"><a href="frmPOPPurchaseRegisterReport.aspx">POP Purchase Register</a></li>
+                                <li id="linkClaimReport" runat="server" visible="false"><a href="frmTargetReport.aspx">Expense Report</a></li>
+                                <li id="linkConsolidatedClaimReport" runat="server" visible="false"><a href="frmPartyWiseSchemeDetailsonPurchaseRaterReport.aspx">Consolidate Expense Scheme Report</a> </li>
+                                <%--<li id="linkTargetSummaryReport" runat="server" Visible="false"><a href="frmTargetSummaryReport.aspx">Expense Summary Report</a></li>
+                                    <li id="linkTargetDetailReport" runat="server" Visible="false"><a href="frmTargetDetailReport.aspx">Expense Detail Report</a></li>--%>
+                                <li id="linkExpenseMonitoringSummary" runat="server" visible="false"><a href="frmExpenseMonitoringSummary.aspx">Monthly Expense Summary</a></li>
+                                <li id="lnkVRSMonthlyExpense" runat="server" visible="false"><a href="frmVRSMonthlyExpenseTopSheet.aspx">VRS Monthly Expense Top Sheet</a></li>
+                                <li id="linkSpecialRatesClaimReport" runat="server" visible="false"><a href="frmSpecialRatesClaimReport.aspx">Special Rates Expense Report</a></li>
+                                <li id="linkMrpDiscountClaimReport" runat="server" visible="false"><a href="frmMrpDiscountClaimReport.aspx">Mrp Discount Expense Report</a></li>
+                                <li id="linkDiscountOutletSchemeReport" runat="server" visible="false"><a href="frmDiscountOutletSchemeReport.aspx">Discount Outlet Scheme Report</a></li>
+                                <li id="linkSchmeExpenseReport" runat="server" visible="false"><a href="frmSchemeExpenseReport.aspx">Scheme Expense Report (After GST)</a></li>
+                                <li id="lnkvatCalculation" runat="server" visible="false"><a href="frmVatCalculationFormat.aspx">Vat MIS</a></li>
+                                <%-- <li id="linknkfrmVRSSpecialDiscountReport" runat="server" Visible="true"><a href="frmVRSSpecialDiscountReport.aspx">VRS Special Discount Report</a></li>--%>
+                                <li id="linknkfrmVRSSpecialDiscountReport" runat="server" visible="false"><a href="frmVRSSpecialDiscountReport.aspx">VRS Special Discount Report</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="linkCollection"><a>Collection Entry</a>
+                            <%--<li><a href="#">Collection Entry</a>--%>
+                            <ul>
+                                <%--<li id="linkCollectionEntry" runat="server" Visible="false"><a href="frmCollectionEntry.aspx">Collection Entry</a></li>--%>
+                                <li id="linkNewCollectionEntry" runat="server" visible="true"><a href="frmNewCollectionEntry.aspx">Collection Entry</a></li>
+                                <li id="linkCutsomerOutStaningWriteOff" runat="server" visible="false"><a href="frmCustomerOutStandingWriteOff.aspx">Outstanding Write-Off (Customer)</a></li>
+                            </ul>
+                            <%--120--%>
+                        </li>
+                        <li><a href="Login.aspx">LogOut</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+
+            <div id="contentpage">
+                <div class="middle_content">
+                    <div>
+                        <div id="Div1" style="height: auto; width: 100%; vertical-align: middle;">
+                            <asp:ContentPlaceHolder ID="ContentPage" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="copyright">
+                Developed &amp; Maintained by TargetIcon Pvt. Ltd
+                <%--<asp:Panel ID="Panel2" runat="server">
+                    <a href=""></a>
+                </asp:Panel>--%>
+            </div>
+
+
+        </div>
+
+    </form>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="Javascript/bootstrap.min.js"></script>
+    <script src="Javascript/bootstrap-multiselect.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+﻿
+
+.textbox1 {
+	background-image:url('images/form_bg.jpg');
+	background-repeat:repeat-x;
+	border:1px solid #d1c7ac;
+	color:#333333;
+	padding:3px;
+	margin-right:4px;
+	margin-bottom:8px;
+	font-family:tahoma, arial, sans-serif;
+}
+
+.Operationbutton {
+  font-family: verdana;
+  color: #FFFFFF !important;
+  font-size: 11px;
+  text-shadow: 1px 1px 0px #7CACDE;
+  box-shadow: 0px 0px 1px #BEE2F9;
+  padding: 4px 10px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 2px solid #3866A3;
+  background: #217AFF;
+}
+.Operationbutton:hover {
+  color: #14396A !important;
+  background: #468CCF;
+  background: linear-gradient(top,  #468CCF,  #63B8EE);
+  background: -ms-linear-gradient(top,  #468CCF,  #63B8EE);
+  background: -webkit-gradient(linear, left top, left bottom, from(#468CCF), to(#63B8EE));
+  background: -moz-linear-gradient(top,  #468CCF,  #63B8EE);
+}

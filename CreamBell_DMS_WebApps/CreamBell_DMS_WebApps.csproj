@@ -1,0 +1,1896 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5F968A2-3187-40E2-AC49-7EE13F471542}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CreamBell_DMS_WebApps</RootNamespace>
+    <AssemblyName>CreamBell_DMS_WebApps</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.7.429, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.93.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.93.0\lib\net40\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="DropDownCheckBoxes, Version=1.1.0.27408, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\DropDownCheckBoxes.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyXLS, Version=8.6.0.0, Culture=neutral, PublicKeyToken=632c31013494909a, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\EU Outsourcing\EasyXLS Trial for .NET v8.6.1\Dot NET version\.NET Framework\EasyXLS.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah, Version=1.2.14706.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.1.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.3.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.3\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastMember.Signed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=9e8f22703bef9a29, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastMember.Signed.1.3.0\lib\net45\FastMember.Signed.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.1.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>DLLs\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CreamBell_DMS_WebApps.csproj.user" />
+    <Content Include="css\acxiom.css" />
+    <Content Include="css\acxiom1.css" />
+    <Content Include="css\axiomhome.css" />
+    <Content Include="css\bootstrap-iso.css" />
+    <Content Include="css\bootstrap-multiselect.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\BootStrapNew.css" />
+    <Content Include="css\btnSearch.css" />
+    <Content Include="css\Buttons.css" />
+    <Content Include="css\cssLogin\style.css" />
+    <Content Include="css\Dashboard.css" />
+    <Content Include="css\DropDown.css" />
+    <Content Include="css\erpLook.css" />
+    <Content Include="css\GhostButton.css" />
+    <Content Include="css\Images\arrow-down-icon-black.png" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\picnew.css" />
+    <Content Include="css\Polaroide.css" />
+    <Content Include="css\SSheet.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\textBoxDesign.css" />
+    <Content Include="css\ui-controls.css" />
+    <Content Include="css\ui-css.css" />
+    <Content Include="css\w3.css" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="dashboard\jquery.min.js" />
+    <Content Include="dashboard\jquerysctipttop.css" />
+    <Content Include="dashboard\waypoints.min.js" />
+    <Content Include="DLLs\AjaxControlToolkit.dll" />
+    <Content Include="DLLs\ClosedXML.dll" />
+    <Content Include="DLLs\DropDownCheckBoxes.dll" />
+    <Content Include="DLLs\EPPlus.dll" />
+    <Content Include="DLLs\itextsharp.dll" />
+    <Content Include="DLLs\Microsoft.Office.Interop.Excel.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DLLs\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="DLLs\Microsoft.ReportViewer.ProcessingObjectModel.DLL" />
+    <Content Include="DLLs\Microsoft.ReportViewer.WebForms.DLL" />
+    <Content Include="DLLs\Microsoft.SqlServer.Types.dll" />
+    <Content Include="Error.html" />
+    <Content Include="frmAdjustmentEntry.aspx" />
+    <Content Include="frmAdjustmentEntryReport.aspx" />
+    <Content Include="frmAreaMonthMaterialSale.aspx" />
+    <Content Include="frmBulkBuyerReport.aspx" />
+    <Content Include="frmCartandOperatorLinking.aspx" />
+    <Content Include="frmCartOperatorMaster.aspx" />
+    <Content Include="frmCollectionEntry.aspx" />
+    <Content Include="frmCollectionReport.aspx" />
+    <Content Include="frmCollectionReport1.aspx" />
+    <Content Include="frmCreditNoteReport.aspx" />
+    <Content Include="frmCurrentStock.aspx" />
+    <Content Include="frmCustomerLedger.aspx" />
+    <Content Include="frmCustomerOutstandingReport.aspx" />
+    <Content Include="frmCustomerOutStandingWriteOff.aspx" />
+    <Content Include="frmCustomerPartyGroup.aspx" />
+    <Content Include="frmCustomerPartyMaster.aspx" />
+    <Content Include="frmCustomerPartyMasterNew.aspx" />
+    <Content Include="frmCustomerWiseSaleReport.aspx" />
+    <Content Include="frmDailySaleRegister.aspx" />
+    <Content Include="frmDailySaleTrackingReport.aspx" />
+    <Content Include="frmDamageReasonCode.aspx" />
+    <Content Include="frmDashboard.aspx" />
+    <Content Include="frmDebitNoteReport.aspx" />
+    <Content Include="FrmDeepFreezerSalesReport.aspx" />
+    <Content Include="frmDetailProductMaster.aspx" />
+    <Content Include="frmDiscountMaster.aspx" />
+    <Content Include="frmDiscountOutletSchemeReport.aspx" />
+    <Content Include="frmDiscountPartyWiseReport.aspx" />
+    <Content Include="frmDiscountView.aspx" />
+    <Content Include="frmDiscountViewNew.aspx" />
+    <Content Include="frmDistributorIncentiveReport.aspx" />
+    <Content Include="frmDistructionReport.aspx" />
+    <Content Include="frmExcelUploadAdj.aspx" />
+    <Content Include="frmExpenseCalculation.aspx" />
+    <Content Include="frmExpenseMonitoringSummary.aspx" />
+    <Content Include="frmFOCInvoiceSave.aspx" />
+    <Content Include="frmFOCPurchaseInvoice.aspx" />
+    <Content Include="frmFOCSaleInvoiceReport.aspx" />
+    <Content Include="frmFocusProductSale.aspx" />
+    <Content Include="frmFreightHandlingReport.aspx" />
+    <Content Include="frmGSTR1Page.aspx" />
+    <Content Include="frmIndentConsolidationToSO.aspx" />
+    <Content Include="frmIndentVSInvoice.aspx" />
+    <Content Include="frmInvoiceGeneration.aspx" />
+    <Content Include="frmInvoicePrepration.aspx" />
+    <Content Include="frmInvoiceSave.aspx" />
+    <Content Include="frmItemSKUWise.aspx" />
+    <Content Include="frmItemTypeWiseSaleReport.aspx" />
+    <Content Include="frmItemWisePartySaleSummary.aspx" />
+    <Content Include="frmItemWiseSaleDetail.aspx" />
+    <Content Include="frmKeyCustomerSale.aspx" />
+    <Content Include="frmLoadSheetCreation.aspx" />
+    <Content Include="frmLoadSheetList.aspx" />
+    <Content Include="frmManualClaim.aspx" />
+    <Content Include="frmMobileAppSyncReport.aspx" />
+    <Content Include="frmMonthlySaleRegister.aspx" />
+    <Content Include="frmMrpDiscountClaimReport.aspx" />
+    <Content Include="frmNewCollectionEntry.aspx" />
+    <Content Include="frmNonBuyerReport.aspx" />
+    <Content Include="frmNotificationMaster.aspx" />
+    <Content Include="frmOpenSalesOrderReport.aspx" />
+    <Content Include="frmOutStandingAgingReport.aspx" />
+    <Content Include="frmPartyWiseSaleReport.aspx" />
+    <Content Include="frmPartyWiseSaleSummary.aspx" />
+    <Content Include="frmPartyWiseSaleSummaryDisc.aspx" />
+    <Content Include="frmPartyWiseSchemeDetailsonPurchaseRaterReport.aspx" />
+    <Content Include="frmPOPInventoryIssueToPSR.aspx" />
+    <Content Include="frmPOPInventoryReceipt.aspx" />
+    <Content Include="frmPOPInventoryTransactionReport.aspx" />
+    <Content Include="frmPOPPurchaseRegisterReport.aspx" />
+    <Content Include="frmPriceMasterReport.aspx" />
+    <Content Include="frmProductDistructionNote.aspx" />
+    <Content Include="frmPSRDSRReport.aspx" />
+    <Content Include="frmPurchaseInvoiceReceiptManual.aspx" />
+    <Content Include="frmPurchaseReceiptReport.aspx" />
+    <Content Include="frmPendingPurchaseReciept.aspx" />
+    <Content Include="frmPowerAppDisplay.aspx" />
+    <Content Include="frmPriceMaster.aspx" />
+    <Content Include="frmProductContributionReport.aspx" />
+    <Content Include="frmProductMaster.aspx" />
+    <Content Include="frmPSRBeatMaster.aspx" />
+    <Content Include="frmPSRCustomerMaster.aspx" />
+    <Content Include="frmPSRDistributorLinkingMaster.aspx" />
+    <Content Include="frmPSROrderDetails.aspx" />
+    <Content Include="frmPSRWiseSalesReport.aspx" />
+    <Content Include="frmPurchaseAutoClaim.aspx" />
+    <Content Include="frmPurchaseIndent.aspx" />
+    <Content Include="frmPurchaseIndentList.aspx" />
+    <Content Include="frmPurchaseInvoiceReceipt.aspx" />
+    <Content Include="frmPurchaseRegister.aspx" />
+    <Content Include="frmPurchaseRegisterReport.aspx" />
+    <Content Include="frmPurchaseReturn.aspx" />
+    <Content Include="frmPurchaseReturnList.aspx" />
+    <Content Include="frmPurchaseReversal.aspx" />
+    <Content Include="frmPurchReceiptList.aspx" />
+    <Content Include="frmPurchUnPostList.aspx" />
+    <Content Include="frmReachReport.aspx" />
+    <Content Include="frmReport.aspx" />
+    <Content Include="frmReportServiceInvoice.aspx" />
+    <Content Include="frmRetailerStatusreport.aspx" />
+    <Content Include="frmRunningSchemeDetail.aspx" />
+    <Content Include="frmRunningSchemeDetailNew.aspx" />
+    <Content Include="frmSaleInvoiceReturn.aspx" />
+    <Content Include="frmSaleOrder.aspx" />
+    <Content Include="frmSaleOrderDetailsNew.aspx" />
+    <Content Include="frmSaleOrder_old.aspx" />
+    <Content Include="frmSaleOrderDetails.aspx" />
+    <Content Include="frmSalePartyItemWise.aspx" />
+    <Content Include="frmSaleRankingReport.aspx" />
+    <Content Include="frmSaleRegister.aspx" />
+    <Content Include="frmSaleRegisterDateWiseReport.aspx" />
+    <Content Include="frmSaleRegisterDateWiseReportNew.aspx" />
+    <Content Include="frmSaleRegisterInvoiceWise.aspx" />
+    <Content Include="frmSaleRegisterItemWise.aspx" />
+    <Content Include="frmSaleRegisterPartyWise.aspx" />
+    <Content Include="frmSaleRegisterProductGroupReport.aspx" />
+    <Content Include="frmSaleRegisterReport.aspx" />
+    <Content Include="frmSalesOrderPreList.aspx" />
+    <Content Include="frmSchemeDataReport.aspx" />
+    <Content Include="frmSchemeExpenseReport.aspx" />
+    <Content Include="frmSchemeMaster.aspx" />
+    <Content Include="frmSchemeTypeMaster.aspx" />
+    <Content Include="frmSDPurchaseInvoiceReceipt.aspx" />
+    <Content Include="frmSDSaleOrder.aspx" />
+    <Content Include="frmSecondaryDiscountUpload.aspx" />
+    <Content Include="frmSecondaryDistructionNote.aspx" />
+    <Content Include="frmServiceInvoiceReversal.aspx" />
+    <Content Include="frmServiceInvoicing.aspx" />
+    <Content Include="frmSOCreationIndent.aspx" />
+    <Content Include="frmSpecialRatesClaimReport.aspx" />
+    <Content Include="frmStockAdjustment.aspx" />
+    <Content Include="frmStockLedgerReport.aspx" />
+    <Content Include="frmStockLocationTransfer.aspx" />
+    <Content Include="frmStockMovementReport.aspx" />
+    <Content Include="frmStockMoveToNonSaleable.aspx" />
+    <Content Include="frmStockSnapshot.aspx" />
+    <Content Include="frmTargetDetailReport.aspx" />
+    <Content Include="frmTargetMaster.aspx" />
+    <Content Include="frmTargetMasterSKU.aspx" />
+    <Content Include="frmTargetReport.aspx" />
+    <Content Include="frmTargetSummaryReport.aspx" />
+    <Content Include="frmTargetVsAchivement.aspx" />
+    <Content Include="frmTemplatePage.aspx" />
+    <Content Include="frmUseNouseReport.aspx" />
+    <Content Include="frmUserLoginDetails.aspx" />
+    <Content Include="frmUserProfile.aspx" />
+    <Content Include="frmVatCalculationFormat.aspx" />
+    <Content Include="frmVatReport.aspx" />
+    <Content Include="frmVenderLedger.aspx" />
+    <Content Include="frmVenderPayment.aspx" />
+    <Content Include="frmVendingCartMaster.aspx" />
+    <Content Include="frmVendingCartVRSLinking.aspx" />
+    <Content Include="frmVendingExpenseCalculation.aspx" />
+    <Content Include="frmVendingExpensesReport.aspx" />
+    <Content Include="frmVendingPurchaseReport.aspx" />
+    <Content Include="frmVendorAttendance.aspx" />
+    <Content Include="frmVersionInfo.aspx" />
+    <Content Include="frmVersionReleaseInfo.aspx" />
+    <Content Include="frmVersionReleaseRegister.aspx" />
+    <Content Include="frmVRSMeltage.aspx" />
+    <Content Include="frmVRSMonthlyExpenseTopSheet.aspx" />
+    <Content Include="frmVRSSpecialDiscountReport.aspx" />
+    <Content Include="frmVRSTransactionDetails.aspx" />
+    <Content Include="frmVRSVDAttendanceReport.aspx" />
+    <Content Include="frmYTDReport.aspx" />
+    <Content Include="GlobalAppCreambell.asax" />
+    <Content Include="gridviewScroll.min.js" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\03a.jpg" />
+    <Content Include="Images\1920x1080new.jpg" />
+    <Content Include="Images\1920x1080_2.jpg" />
+    <Content Include="Images\1leftarrow.ico" />
+    <Content Include="Images\512x512.png" />
+    <Content Include="Images\arrow-down-icon-black.png" />
+    <Content Include="Images\arrow.png" />
+    <Content Include="Images\arrowhl.png" />
+    <Content Include="Images\arrowhr.png" />
+    <Content Include="Images\arrowvb.png" />
+    <Content Include="Images\arrowvt.png" />
+    <Content Include="Images\bar.gif" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\bg1.jpg" />
+    <Content Include="Images\bg2.jpg" />
+    <Content Include="Images\bgLogo1080p.jpg" />
+    <Content Include="Images\bgYellow.jpg" />
+    <Content Include="Images\bg_2000pix.jpg" />
+    <Content Include="Images\calc.jpg" />
+    <Content Include="Images\calculator.png" />
+    <Content Include="Images\calculator1.jpg" />
+    <Content Include="Images\calculator2.png" />
+    <Content Include="Images\calendar.jpg" />
+    <Content Include="Images\calendar.png" />
+    <Content Include="Images\CB-logo.jpg" />
+    <Content Include="Images\creambelltitleLogo.png" />
+    <Content Include="Images\dlogo.jpg" />
+    <Content Include="Images\dlogobig.jpg" />
+    <Content Include="Images\DownloadTemplate.gif" />
+    <Content Include="Images\excel-24.ico" />
+    <Content Include="Images\excelexport.jpg" />
+    <Content Include="Images\favicon %281%29.ico" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\finalnew1.jpg" />
+    <Content Include="Images\home.png" />
+    <Content Include="Images\icon.png" />
+    <Content Include="Images\img1.png" />
+    <Content Include="Images\img2.png" />
+    <Content Include="Images\img3.png" />
+    <Content Include="Images\img4.png" />
+    <Content Include="Images\newbg1.jpg" />
+    <Content Include="Images\newbg2.jpg" />
+    <Content Include="Images\newbg3.jpg" />
+    <Content Include="Images\newbg4.jpg" />
+    <Content Include="Images\newbg5.jpg" />
+    <Content Include="Images\password.png" />
+    <Content Include="Images\PDF_file_icon.png" />
+    <Content Include="Images\printicon.png" />
+    <Content Include="Images\Profile.png" />
+    <Content Include="Images\refresh.png" />
+    <Content Include="Images\searchicon.gif" />
+    <Content Include="Images\signinbtn.png" />
+    <Content Include="Images\test2.jpg" />
+    <Content Include="Images\test3.jpg" />
+    <Content Include="Images\test6.jpg" />
+    <Content Include="Images\test7.jpg" />
+    <Content Include="Images\username.png" />
+    <Content Include="Javascript\BackButtonDisable.js" />
+    <Content Include="Javascript\bootstrap-multiselect.js" />
+    <Content Include="Javascript\bootstrap.min.js" />
+    <Content Include="Javascript\custom.js" />
+    <Content Include="Javascript\DateValidation.js" />
+    <Content Include="Javascript\index.js" />
+    <Content Include="Javascript\jquery-2.1.1.min.js" />
+    <Content Include="Javascript\jquery.min.js" />
+    <Content Include="Javascript\jquery183.min.js" />
+    <Content Include="JqueryColorBox\Active.JPG" />
+    <Content Include="JqueryColorBox\add.png" />
+    <Content Include="JqueryColorBox\ajax-loader.gif" />
+    <Content Include="JqueryColorBox\browser-opera-icon.png" />
+    <Content Include="JqueryColorBox\chrome.gif" />
+    <Content Include="JqueryColorBox\colorbox.css" />
+    <Content Include="JqueryColorBox\controls.png" />
+    <Content Include="JqueryColorBox\CustomColorBox.js" />
+    <Content Include="JqueryColorBox\del.png" />
+    <Content Include="JqueryColorBox\drop.gif" />
+    <Content Include="JqueryColorBox\drop.png" />
+    <Content Include="JqueryColorBox\False.jpg" />
+    <Content Include="JqueryColorBox\Fav.jpg" />
+    <Content Include="JqueryColorBox\footer-bottom.png" />
+    <Content Include="JqueryColorBox\ftv2mlastnode.gif" />
+    <Content Include="JqueryColorBox\ftv2plastnode.gif" />
+    <Content Include="JqueryColorBox\ftv2pnode.gif" />
+    <Content Include="JqueryColorBox\Header1.png" />
+    <Content Include="JqueryColorBox\Header2.png" />
+    <Content Include="JqueryColorBox\Header3.jpg" />
+    <Content Include="JqueryColorBox\Header4.png" />
+    <Content Include="JqueryColorBox\Header5.gif" />
+    <Content Include="JqueryColorBox\Header6.png" />
+    <Content Include="JqueryColorBox\Header7.png" />
+    <Content Include="JqueryColorBox\ie.gif" />
+    <Content Include="JqueryColorBox\InActive.jpg" />
+    <Content Include="JqueryColorBox\InActive.png" />
+    <Content Include="JqueryColorBox\InActive1.JPG" />
+    <Content Include="JqueryColorBox\jquery.colorbox.js" />
+    <Content Include="JqueryColorBox\jqueryColorbox1.10.2.min.js" />
+    <Content Include="JqueryColorBox\line.gif" />
+    <Content Include="JqueryColorBox\loading.gif" />
+    <Content Include="JqueryColorBox\page-first-disabled.gif" />
+    <Content Include="JqueryColorBox\page-first.gif" />
+    <Content Include="JqueryColorBox\page-last-disabled.gif" />
+    <Content Include="JqueryColorBox\page-last.gif" />
+    <Content Include="JqueryColorBox\page-next-disabled.gif" />
+    <Content Include="JqueryColorBox\page-next.gif" />
+    <Content Include="JqueryColorBox\page-prev-disabled.gif" />
+    <Content Include="JqueryColorBox\page-prev.gif" />
+    <Content Include="JqueryColorBox\safari.gif" />
+    <Content Include="JqueryColorBox\section-bg.png" />
+    <Content Include="JqueryColorBox\True.JPG" />
+    <Content Include="JqueryColorBox\user-icon1.jpg" />
+    <Content Include="JqueryNotify\jquery.notice.css" />
+    <Content Include="JqueryNotify\jquery.notice.js" />
+    <Content Include="JqueryNotify\jquery2.0.2.min.js" />
+    <Content Include="jquery\jquery-1.4.2.min.js" />
+    <Content Include="jquery\jquery.counterup.js" />
+    <Content Include="jquery\jquery.counterup.min.js" />
+    <Content Include="jquery\jquery.min.js" />
+    <Content Include="jquery\jquery.searchabledropdown-1.0.8.min.js" />
+    <Content Include="jquery\ScrollableGridViewPlugin_ASP.NetAJAXmin.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="ReportSalesInvoice.aspx" />
+    <Content Include="ReportSalesInvoice_Old.aspx" />
+    <Content Include="Scripts\GridviewScroll.css" />
+    <Content Include="Scripts\gridviewScroll.min.js" />
+    <Content Include="UserControl\ucRadioButtonList.ascx" />
+    <Content Include="UserControl\ucDropDown.ascx" />
+    <Content Include="UserControl\ucRoleFilters.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\AmountToWords.cs" />
+    <Compile Include="App_Code\CreamBellFramework.cs" />
+    <Compile Include="App_Code\ExcelExport.cs" />
+    <Compile Include="App_Code\ExcelUpload.cs" />
+    <Compile Include="App_Code\Global.cs" />
+    <Compile Include="App_Code\SessionKeys.cs" />
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdjustmentEntry.aspx.cs">
+      <DependentUpon>frmAdjustmentEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAdjustmentEntry.aspx.designer.cs">
+      <DependentUpon>frmAdjustmentEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdjustmentEntryReport.aspx.cs">
+      <DependentUpon>frmAdjustmentEntryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAdjustmentEntryReport.aspx.designer.cs">
+      <DependentUpon>frmAdjustmentEntryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAreaMonthMaterialSale.aspx.cs">
+      <DependentUpon>frmAreaMonthMaterialSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAreaMonthMaterialSale.aspx.designer.cs">
+      <DependentUpon>frmAreaMonthMaterialSale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmBulkBuyerReport.aspx.cs">
+      <DependentUpon>frmBulkBuyerReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmBulkBuyerReport.aspx.designer.cs">
+      <DependentUpon>frmBulkBuyerReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCartandOperatorLinking.aspx.cs">
+      <DependentUpon>frmCartandOperatorLinking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCartandOperatorLinking.aspx.designer.cs">
+      <DependentUpon>frmCartandOperatorLinking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCartOperatorMaster.aspx.cs">
+      <DependentUpon>frmCartOperatorMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCartOperatorMaster.aspx.designer.cs">
+      <DependentUpon>frmCartOperatorMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCollectionEntry.aspx.cs">
+      <DependentUpon>frmCollectionEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCollectionEntry.aspx.designer.cs">
+      <DependentUpon>frmCollectionEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCollectionReport.aspx.cs">
+      <DependentUpon>frmCollectionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCollectionReport.aspx.designer.cs">
+      <DependentUpon>frmCollectionReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCollectionReport1.aspx.cs">
+      <DependentUpon>frmCollectionReport1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCollectionReport1.aspx.designer.cs">
+      <DependentUpon>frmCollectionReport1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditNoteReport.aspx.cs">
+      <DependentUpon>frmCreditNoteReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCreditNoteReport.aspx.designer.cs">
+      <DependentUpon>frmCreditNoteReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCurrentStock.aspx.cs">
+      <DependentUpon>frmCurrentStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCurrentStock.aspx.designer.cs">
+      <DependentUpon>frmCurrentStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerLedger.aspx.cs">
+      <DependentUpon>frmCustomerLedger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCustomerLedger.aspx.designer.cs">
+      <DependentUpon>frmCustomerLedger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerOutstandingReport.aspx.cs">
+      <DependentUpon>frmCustomerOutstandingReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCustomerOutstandingReport.aspx.designer.cs">
+      <DependentUpon>frmCustomerOutstandingReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerOutStandingWriteOff.aspx.cs">
+      <DependentUpon>frmCustomerOutStandingWriteOff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCustomerOutStandingWriteOff.aspx.designer.cs">
+      <DependentUpon>frmCustomerOutStandingWriteOff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerPartyGroup.aspx.cs">
+      <DependentUpon>frmCustomerPartyGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCustomerPartyGroup.aspx.designer.cs">
+      <DependentUpon>frmCustomerPartyGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerPartyMaster.aspx.cs">
+      <DependentUpon>frmCustomerPartyMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCustomerPartyMaster.aspx.designer.cs">
+      <DependentUpon>frmCustomerPartyMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerPartyMasterNew.aspx.cs">
+      <DependentUpon>frmCustomerPartyMasterNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCustomerPartyMasterNew.aspx.designer.cs">
+      <DependentUpon>frmCustomerPartyMasterNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerWiseSaleReport.aspx.cs">
+      <DependentUpon>frmCustomerWiseSaleReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmCustomerWiseSaleReport.aspx.designer.cs">
+      <DependentUpon>frmCustomerWiseSaleReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailySaleRegister.aspx.cs">
+      <DependentUpon>frmDailySaleRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDailySaleRegister.aspx.designer.cs">
+      <DependentUpon>frmDailySaleRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailySaleTrackingReport.aspx.cs">
+      <DependentUpon>frmDailySaleTrackingReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDailySaleTrackingReport.aspx.designer.cs">
+      <DependentUpon>frmDailySaleTrackingReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDamageReasonCode.aspx.cs">
+      <DependentUpon>frmDamageReasonCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDamageReasonCode.aspx.designer.cs">
+      <DependentUpon>frmDamageReasonCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboard.aspx.cs">
+      <DependentUpon>frmDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.aspx.designer.cs">
+      <DependentUpon>frmDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDebitNoteReport.aspx.cs">
+      <DependentUpon>frmDebitNoteReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDebitNoteReport.aspx.designer.cs">
+      <DependentUpon>frmDebitNoteReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeepFreezerSalesReport.aspx.cs">
+      <DependentUpon>FrmDeepFreezerSalesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmDeepFreezerSalesReport.aspx.designer.cs">
+      <DependentUpon>FrmDeepFreezerSalesReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetailProductMaster.aspx.cs">
+      <DependentUpon>frmDetailProductMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDetailProductMaster.aspx.designer.cs">
+      <DependentUpon>frmDetailProductMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiscountMaster.aspx.cs">
+      <DependentUpon>frmDiscountMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDiscountMaster.aspx.designer.cs">
+      <DependentUpon>frmDiscountMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiscountOutletSchemeReport.aspx.cs">
+      <DependentUpon>frmDiscountOutletSchemeReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDiscountOutletSchemeReport.aspx.designer.cs">
+      <DependentUpon>frmDiscountOutletSchemeReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiscountPartyWiseReport.aspx.cs">
+      <DependentUpon>frmDiscountPartyWiseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDiscountPartyWiseReport.aspx.designer.cs">
+      <DependentUpon>frmDiscountPartyWiseReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiscountView.aspx.cs">
+      <DependentUpon>frmDiscountView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDiscountView.aspx.designer.cs">
+      <DependentUpon>frmDiscountView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiscountViewNew.aspx.cs">
+      <DependentUpon>frmDiscountViewNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDiscountViewNew.aspx.designer.cs">
+      <DependentUpon>frmDiscountViewNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDistributorIncentiveReport.aspx.cs">
+      <DependentUpon>frmDistributorIncentiveReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDistributorIncentiveReport.aspx.designer.cs">
+      <DependentUpon>frmDistributorIncentiveReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmDistructionReport.aspx.cs">
+      <DependentUpon>frmDistructionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmDistructionReport.aspx.designer.cs">
+      <DependentUpon>frmDistructionReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmExcelUploadAdj.aspx.cs">
+      <DependentUpon>frmExcelUploadAdj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmExcelUploadAdj.aspx.designer.cs">
+      <DependentUpon>frmExcelUploadAdj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmExpenseCalculation.aspx.cs">
+      <DependentUpon>frmExpenseCalculation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmExpenseCalculation.aspx.designer.cs">
+      <DependentUpon>frmExpenseCalculation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmExpenseMonitoringSummary.aspx.cs">
+      <DependentUpon>frmExpenseMonitoringSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmExpenseMonitoringSummary.aspx.designer.cs">
+      <DependentUpon>frmExpenseMonitoringSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFOCInvoiceSave.aspx.cs">
+      <DependentUpon>frmFOCInvoiceSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFOCInvoiceSave.aspx.designer.cs">
+      <DependentUpon>frmFOCInvoiceSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFOCPurchaseInvoice.aspx.cs">
+      <DependentUpon>frmFOCPurchaseInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFOCPurchaseInvoice.aspx.designer.cs">
+      <DependentUpon>frmFOCPurchaseInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFOCSaleInvoiceReport.aspx.cs">
+      <DependentUpon>frmFOCSaleInvoiceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFOCSaleInvoiceReport.aspx.designer.cs">
+      <DependentUpon>frmFOCSaleInvoiceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFocusProductSale.aspx.cs">
+      <DependentUpon>frmFocusProductSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFocusProductSale.aspx.designer.cs">
+      <DependentUpon>frmFocusProductSale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmFreightHandlingReport.aspx.cs">
+      <DependentUpon>frmFreightHandlingReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmFreightHandlingReport.aspx.designer.cs">
+      <DependentUpon>frmFreightHandlingReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmGSTR1Page.aspx.cs">
+      <DependentUpon>frmGSTR1Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmGSTR1Page.aspx.designer.cs">
+      <DependentUpon>frmGSTR1Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndentConsolidationToSO.aspx.cs">
+      <DependentUpon>frmIndentConsolidationToSO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIndentConsolidationToSO.aspx.designer.cs">
+      <DependentUpon>frmIndentConsolidationToSO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmIndentVSInvoice.aspx.cs">
+      <DependentUpon>frmIndentVSInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmIndentVSInvoice.aspx.designer.cs">
+      <DependentUpon>frmIndentVSInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceGeneration.aspx.cs">
+      <DependentUpon>frmInvoiceGeneration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceGeneration.aspx.designer.cs">
+      <DependentUpon>frmInvoiceGeneration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoicePrepration.aspx.cs">
+      <DependentUpon>frmInvoicePrepration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmInvoicePrepration.aspx.designer.cs">
+      <DependentUpon>frmInvoicePrepration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceSave.aspx.cs">
+      <DependentUpon>frmInvoiceSave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceSave.aspx.designer.cs">
+      <DependentUpon>frmInvoiceSave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemSKUWise.aspx.cs">
+      <DependentUpon>frmItemSKUWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmItemSKUWise.aspx.designer.cs">
+      <DependentUpon>frmItemSKUWise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemTypeWiseSaleReport.aspx.cs">
+      <DependentUpon>frmItemTypeWiseSaleReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmItemTypeWiseSaleReport.aspx.designer.cs">
+      <DependentUpon>frmItemTypeWiseSaleReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemWisePartySaleSummary.aspx.cs">
+      <DependentUpon>frmItemWisePartySaleSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmItemWisePartySaleSummary.aspx.designer.cs">
+      <DependentUpon>frmItemWisePartySaleSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmItemWiseSaleDetail.aspx.cs">
+      <DependentUpon>frmItemWiseSaleDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmItemWiseSaleDetail.aspx.designer.cs">
+      <DependentUpon>frmItemWiseSaleDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmKeyCustomerSale.aspx.cs">
+      <DependentUpon>frmKeyCustomerSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmKeyCustomerSale.aspx.designer.cs">
+      <DependentUpon>frmKeyCustomerSale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoadSheetCreation.aspx.cs">
+      <DependentUpon>frmLoadSheetCreation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLoadSheetCreation.aspx.designer.cs">
+      <DependentUpon>frmLoadSheetCreation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoadSheetList.aspx.cs">
+      <DependentUpon>frmLoadSheetList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmLoadSheetList.aspx.designer.cs">
+      <DependentUpon>frmLoadSheetList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmManualClaim.aspx.cs">
+      <DependentUpon>frmManualClaim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmManualClaim.aspx.designer.cs">
+      <DependentUpon>frmManualClaim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMobileAppSyncReport.aspx.cs">
+      <DependentUpon>frmMobileAppSyncReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMobileAppSyncReport.aspx.designer.cs">
+      <DependentUpon>frmMobileAppSyncReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonthlySaleRegister.aspx.cs">
+      <DependentUpon>frmMonthlySaleRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMonthlySaleRegister.aspx.designer.cs">
+      <DependentUpon>frmMonthlySaleRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmMrpDiscountClaimReport.aspx.cs">
+      <DependentUpon>frmMrpDiscountClaimReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmMrpDiscountClaimReport.aspx.designer.cs">
+      <DependentUpon>frmMrpDiscountClaimReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewCollectionEntry.aspx.cs">
+      <DependentUpon>frmNewCollectionEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmNewCollectionEntry.aspx.designer.cs">
+      <DependentUpon>frmNewCollectionEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmNonBuyerReport.aspx.cs">
+      <DependentUpon>frmNonBuyerReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmNonBuyerReport.aspx.designer.cs">
+      <DependentUpon>frmNonBuyerReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotificationMaster.aspx.cs">
+      <DependentUpon>frmNotificationMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmNotificationMaster.aspx.designer.cs">
+      <DependentUpon>frmNotificationMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpenSalesOrderReport.aspx.cs">
+      <DependentUpon>frmOpenSalesOrderReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOpenSalesOrderReport.aspx.designer.cs">
+      <DependentUpon>frmOpenSalesOrderReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOutStandingAgingReport.aspx.cs">
+      <DependentUpon>frmOutStandingAgingReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOutStandingAgingReport.aspx.designer.cs">
+      <DependentUpon>frmOutStandingAgingReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPartyWiseSaleReport.aspx.cs">
+      <DependentUpon>frmPartyWiseSaleReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPartyWiseSaleReport.aspx.designer.cs">
+      <DependentUpon>frmPartyWiseSaleReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPartyWiseSaleSummary.aspx.cs">
+      <DependentUpon>frmPartyWiseSaleSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPartyWiseSaleSummary.aspx.designer.cs">
+      <DependentUpon>frmPartyWiseSaleSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPartyWiseSaleSummaryDisc.aspx.cs">
+      <DependentUpon>frmPartyWiseSaleSummaryDisc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPartyWiseSaleSummaryDisc.aspx.designer.cs">
+      <DependentUpon>frmPartyWiseSaleSummaryDisc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPartyWiseSchemeDetailsonPurchaseRaterReport.aspx.cs">
+      <DependentUpon>frmPartyWiseSchemeDetailsonPurchaseRaterReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPartyWiseSchemeDetailsonPurchaseRaterReport.aspx.designer.cs">
+      <DependentUpon>frmPartyWiseSchemeDetailsonPurchaseRaterReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPInventoryIssueToPSR.aspx.cs">
+      <DependentUpon>frmPOPInventoryIssueToPSR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPOPInventoryIssueToPSR.aspx.designer.cs">
+      <DependentUpon>frmPOPInventoryIssueToPSR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPInventoryReceipt.aspx.cs">
+      <DependentUpon>frmPOPInventoryReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPOPInventoryReceipt.aspx.designer.cs">
+      <DependentUpon>frmPOPInventoryReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPInventoryTransactionReport.aspx.cs">
+      <DependentUpon>frmPOPInventoryTransactionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPOPInventoryTransactionReport.aspx.designer.cs">
+      <DependentUpon>frmPOPInventoryTransactionReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPPurchaseRegisterReport.aspx.cs">
+      <DependentUpon>frmPOPPurchaseRegisterReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPOPPurchaseRegisterReport.aspx.designer.cs">
+      <DependentUpon>frmPOPPurchaseRegisterReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPriceMasterReport.aspx.cs">
+      <DependentUpon>frmPriceMasterReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPriceMasterReport.aspx.designer.cs">
+      <DependentUpon>frmPriceMasterReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductDistructionNote.aspx.cs">
+      <DependentUpon>frmProductDistructionNote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmProductDistructionNote.aspx.designer.cs">
+      <DependentUpon>frmProductDistructionNote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPSRDSRReport.aspx.cs">
+      <DependentUpon>frmPSRDSRReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPSRDSRReport.aspx.designer.cs">
+      <DependentUpon>frmPSRDSRReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseInvoiceReceiptManual.aspx.cs">
+      <DependentUpon>frmPurchaseInvoiceReceiptManual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseInvoiceReceiptManual.aspx.designer.cs">
+      <DependentUpon>frmPurchaseInvoiceReceiptManual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseReceiptReport.aspx.cs">
+      <DependentUpon>frmPurchaseReceiptReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseReceiptReport.aspx.designer.cs">
+      <DependentUpon>frmPurchaseReceiptReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPendingPurchaseReciept.aspx.cs">
+      <DependentUpon>frmPendingPurchaseReciept.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPendingPurchaseReciept.aspx.designer.cs">
+      <DependentUpon>frmPendingPurchaseReciept.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPowerAppDisplay.aspx.cs">
+      <DependentUpon>frmPowerAppDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPowerAppDisplay.aspx.designer.cs">
+      <DependentUpon>frmPowerAppDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPriceMaster.aspx.cs">
+      <DependentUpon>frmPriceMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPriceMaster.aspx.designer.cs">
+      <DependentUpon>frmPriceMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductContributionReport.aspx.cs">
+      <DependentUpon>frmProductContributionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmProductContributionReport.aspx.designer.cs">
+      <DependentUpon>frmProductContributionReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductMaster.aspx.cs">
+      <DependentUpon>frmProductMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmProductMaster.aspx.designer.cs">
+      <DependentUpon>frmProductMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPSRBeatMaster.aspx.cs">
+      <DependentUpon>frmPSRBeatMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPSRBeatMaster.aspx.designer.cs">
+      <DependentUpon>frmPSRBeatMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPSRCustomerMaster.aspx.cs">
+      <DependentUpon>frmPSRCustomerMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPSRCustomerMaster.aspx.designer.cs">
+      <DependentUpon>frmPSRCustomerMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPSRDistributorLinkingMaster.aspx.cs">
+      <DependentUpon>frmPSRDistributorLinkingMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPSRDistributorLinkingMaster.aspx.designer.cs">
+      <DependentUpon>frmPSRDistributorLinkingMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPSROrderDetails.aspx.cs">
+      <DependentUpon>frmPSROrderDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPSROrderDetails.aspx.designer.cs">
+      <DependentUpon>frmPSROrderDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPSRWiseSalesReport.aspx.cs">
+      <DependentUpon>frmPSRWiseSalesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPSRWiseSalesReport.aspx.designer.cs">
+      <DependentUpon>frmPSRWiseSalesReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseAutoClaim.aspx.cs">
+      <DependentUpon>frmPurchaseAutoClaim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseAutoClaim.aspx.designer.cs">
+      <DependentUpon>frmPurchaseAutoClaim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseIndent.aspx.cs">
+      <DependentUpon>frmPurchaseIndent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseIndent.aspx.designer.cs">
+      <DependentUpon>frmPurchaseIndent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseIndentList.aspx.cs">
+      <DependentUpon>frmPurchaseIndentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseIndentList.aspx.designer.cs">
+      <DependentUpon>frmPurchaseIndentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseInvoiceReceipt.aspx.cs">
+      <DependentUpon>frmPurchaseInvoiceReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseInvoiceReceipt.aspx.designer.cs">
+      <DependentUpon>frmPurchaseInvoiceReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseRegister.aspx.cs">
+      <DependentUpon>frmPurchaseRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseRegister.aspx.designer.cs">
+      <DependentUpon>frmPurchaseRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseRegisterReport.aspx.cs">
+      <DependentUpon>frmPurchaseRegisterReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseRegisterReport.aspx.designer.cs">
+      <DependentUpon>frmPurchaseRegisterReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseReturn.aspx.cs">
+      <DependentUpon>frmPurchaseReturn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseReturn.aspx.designer.cs">
+      <DependentUpon>frmPurchaseReturn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseReturnList.aspx.cs">
+      <DependentUpon>frmPurchaseReturnList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseReturnList.aspx.designer.cs">
+      <DependentUpon>frmPurchaseReturnList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseReversal.aspx.cs">
+      <DependentUpon>frmPurchaseReversal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseReversal.aspx.designer.cs">
+      <DependentUpon>frmPurchaseReversal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchReceiptList.aspx.cs">
+      <DependentUpon>frmPurchReceiptList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPurchReceiptList.aspx.designer.cs">
+      <DependentUpon>frmPurchReceiptList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchUnPostList.aspx.cs">
+      <DependentUpon>frmPurchUnPostList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPurchUnPostList.aspx.designer.cs">
+      <DependentUpon>frmPurchUnPostList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmReachReport.aspx.cs">
+      <DependentUpon>frmReachReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmReachReport.aspx.designer.cs">
+      <DependentUpon>frmReachReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport.aspx.cs">
+      <DependentUpon>frmReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmReport.aspx.designer.cs">
+      <DependentUpon>frmReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportServiceInvoice.aspx.cs">
+      <DependentUpon>frmReportServiceInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmReportServiceInvoice.aspx.designer.cs">
+      <DependentUpon>frmReportServiceInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmRetailerStatusreport.aspx.cs">
+      <DependentUpon>frmRetailerStatusreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmRetailerStatusreport.aspx.designer.cs">
+      <DependentUpon>frmRetailerStatusreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmRunningSchemeDetail.aspx.cs">
+      <DependentUpon>frmRunningSchemeDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmRunningSchemeDetail.aspx.designer.cs">
+      <DependentUpon>frmRunningSchemeDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmRunningSchemeDetailNew.aspx.cs">
+      <DependentUpon>frmRunningSchemeDetailNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmRunningSchemeDetailNew.aspx.designer.cs">
+      <DependentUpon>frmRunningSchemeDetailNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleInvoiceReturn.aspx.cs">
+      <DependentUpon>frmSaleInvoiceReturn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSaleInvoiceReturn.aspx.designer.cs">
+      <DependentUpon>frmSaleInvoiceReturn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleOrder.aspx.cs">
+      <DependentUpon>frmSaleOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSaleOrder.aspx.designer.cs">
+      <DependentUpon>frmSaleOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleOrderDetailsNew.aspx.cs">
+      <DependentUpon>frmSaleOrderDetailsNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSaleOrderDetailsNew.aspx.designer.cs">
+      <DependentUpon>frmSaleOrderDetailsNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleOrder_old.aspx.cs">
+      <DependentUpon>frmSaleOrder_old.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSaleOrder_old.aspx.designer.cs">
+      <DependentUpon>frmSaleOrder_old.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleOrderDetails.aspx.cs">
+      <DependentUpon>frmSaleOrderDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSaleOrderDetails.aspx.designer.cs">
+      <DependentUpon>frmSaleOrderDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalePartyItemWise.aspx.cs">
+      <DependentUpon>frmSalePartyItemWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSalePartyItemWise.aspx.designer.cs">
+      <DependentUpon>frmSalePartyItemWise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleRankingReport.aspx.cs">
+      <DependentUpon>frmSaleRankingReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSaleRankingReport.aspx.designer.cs">
+      <DependentUpon>frmSaleRankingReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleRegister.aspx.cs">
+      <DependentUpon>frmSaleRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSaleRegister.aspx.designer.cs">
+      <DependentUpon>frmSaleRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleRegisterDateWiseReport.aspx.cs">
+      <DependentUpon>frmSaleRegisterDateWiseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSaleRegisterDateWiseReport.aspx.designer.cs">
+      <DependentUpon>frmSaleRegisterDateWiseReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleRegisterDateWiseReportNew.aspx.cs">
+      <DependentUpon>frmSaleRegisterDateWiseReportNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSaleRegisterDateWiseReportNew.aspx.designer.cs">
+      <DependentUpon>frmSaleRegisterDateWiseReportNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleRegisterInvoiceWise.aspx.cs">
+      <DependentUpon>frmSaleRegisterInvoiceWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSaleRegisterInvoiceWise.aspx.designer.cs">
+      <DependentUpon>frmSaleRegisterInvoiceWise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleRegisterItemWise.aspx.cs">
+      <DependentUpon>frmSaleRegisterItemWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSaleRegisterItemWise.aspx.designer.cs">
+      <DependentUpon>frmSaleRegisterItemWise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleRegisterPartyWise.aspx.cs">
+      <DependentUpon>frmSaleRegisterPartyWise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSaleRegisterPartyWise.aspx.designer.cs">
+      <DependentUpon>frmSaleRegisterPartyWise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleRegisterProductGroupReport.aspx.cs">
+      <DependentUpon>frmSaleRegisterProductGroupReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSaleRegisterProductGroupReport.aspx.designer.cs">
+      <DependentUpon>frmSaleRegisterProductGroupReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaleRegisterReport.aspx.cs">
+      <DependentUpon>frmSaleRegisterReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSaleRegisterReport.aspx.designer.cs">
+      <DependentUpon>frmSaleRegisterReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesOrderPreList.aspx.cs">
+      <DependentUpon>frmSalesOrderPreList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSalesOrderPreList.aspx.designer.cs">
+      <DependentUpon>frmSalesOrderPreList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchemeDataReport.aspx.cs">
+      <DependentUpon>frmSchemeDataReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSchemeDataReport.aspx.designer.cs">
+      <DependentUpon>frmSchemeDataReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchemeExpenseReport.aspx.cs">
+      <DependentUpon>frmSchemeExpenseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSchemeExpenseReport.aspx.designer.cs">
+      <DependentUpon>frmSchemeExpenseReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchemeMaster.aspx.cs">
+      <DependentUpon>frmSchemeMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSchemeMaster.aspx.designer.cs">
+      <DependentUpon>frmSchemeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSchemeTypeMaster.aspx.cs">
+      <DependentUpon>frmSchemeTypeMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSchemeTypeMaster.aspx.designer.cs">
+      <DependentUpon>frmSchemeTypeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSDPurchaseInvoiceReceipt.aspx.cs">
+      <DependentUpon>frmSDPurchaseInvoiceReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSDPurchaseInvoiceReceipt.aspx.designer.cs">
+      <DependentUpon>frmSDPurchaseInvoiceReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSDSaleOrder.aspx.cs">
+      <DependentUpon>frmSDSaleOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSDSaleOrder.aspx.designer.cs">
+      <DependentUpon>frmSDSaleOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecondaryDiscountUpload.aspx.cs">
+      <DependentUpon>frmSecondaryDiscountUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecondaryDiscountUpload.aspx.designer.cs">
+      <DependentUpon>frmSecondaryDiscountUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSecondaryDistructionNote.aspx.cs">
+      <DependentUpon>frmSecondaryDistructionNote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSecondaryDistructionNote.aspx.designer.cs">
+      <DependentUpon>frmSecondaryDistructionNote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceInvoiceReversal.aspx.cs">
+      <DependentUpon>frmServiceInvoiceReversal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmServiceInvoiceReversal.aspx.designer.cs">
+      <DependentUpon>frmServiceInvoiceReversal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceInvoicing.aspx.cs">
+      <DependentUpon>frmServiceInvoicing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmServiceInvoicing.aspx.designer.cs">
+      <DependentUpon>frmServiceInvoicing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSOCreationIndent.aspx.cs">
+      <DependentUpon>frmSOCreationIndent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSOCreationIndent.aspx.designer.cs">
+      <DependentUpon>frmSOCreationIndent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpecialRatesClaimReport.aspx.cs">
+      <DependentUpon>frmSpecialRatesClaimReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSpecialRatesClaimReport.aspx.designer.cs">
+      <DependentUpon>frmSpecialRatesClaimReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockAdjustment.aspx.cs">
+      <DependentUpon>frmStockAdjustment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmStockAdjustment.aspx.designer.cs">
+      <DependentUpon>frmStockAdjustment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockLedgerReport.aspx.cs">
+      <DependentUpon>frmStockLedgerReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmStockLedgerReport.aspx.designer.cs">
+      <DependentUpon>frmStockLedgerReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockLocationTransfer.aspx.cs">
+      <DependentUpon>frmStockLocationTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmStockLocationTransfer.aspx.designer.cs">
+      <DependentUpon>frmStockLocationTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockMovementReport.aspx.cs">
+      <DependentUpon>frmStockMovementReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmStockMovementReport.aspx.designer.cs">
+      <DependentUpon>frmStockMovementReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockMoveToNonSaleable.aspx.cs">
+      <DependentUpon>frmStockMoveToNonSaleable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmStockMoveToNonSaleable.aspx.designer.cs">
+      <DependentUpon>frmStockMoveToNonSaleable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockSnapshot.aspx.cs">
+      <DependentUpon>frmStockSnapshot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmStockSnapshot.aspx.designer.cs">
+      <DependentUpon>frmStockSnapshot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTargetDetailReport.aspx.cs">
+      <DependentUpon>frmTargetDetailReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTargetDetailReport.aspx.designer.cs">
+      <DependentUpon>frmTargetDetailReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTargetMaster.aspx.cs">
+      <DependentUpon>frmTargetMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTargetMaster.aspx.designer.cs">
+      <DependentUpon>frmTargetMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTargetMasterSKU.aspx.cs">
+      <DependentUpon>frmTargetMasterSKU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTargetMasterSKU.aspx.designer.cs">
+      <DependentUpon>frmTargetMasterSKU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTargetReport.aspx.cs">
+      <DependentUpon>frmTargetReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTargetReport.aspx.designer.cs">
+      <DependentUpon>frmTargetReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTargetSummaryReport.aspx.cs">
+      <DependentUpon>frmTargetSummaryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTargetSummaryReport.aspx.designer.cs">
+      <DependentUpon>frmTargetSummaryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTargetVsAchivement.aspx.cs">
+      <DependentUpon>frmTargetVsAchivement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTargetVsAchivement.aspx.designer.cs">
+      <DependentUpon>frmTargetVsAchivement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTemplatePage.aspx.cs">
+      <DependentUpon>frmTemplatePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTemplatePage.aspx.designer.cs">
+      <DependentUpon>frmTemplatePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmUseNouseReport.aspx.cs">
+      <DependentUpon>frmUseNouseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmUseNouseReport.aspx.designer.cs">
+      <DependentUpon>frmUseNouseReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserLoginDetails.aspx.cs">
+      <DependentUpon>frmUserLoginDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmUserLoginDetails.aspx.designer.cs">
+      <DependentUpon>frmUserLoginDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserProfile.aspx.cs">
+      <DependentUpon>frmUserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmUserProfile.aspx.designer.cs">
+      <DependentUpon>frmUserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVatCalculationFormat.aspx.cs">
+      <DependentUpon>frmVatCalculationFormat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVatCalculationFormat.aspx.designer.cs">
+      <DependentUpon>frmVatCalculationFormat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVatReport.aspx.cs">
+      <DependentUpon>frmVatReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVatReport.aspx.designer.cs">
+      <DependentUpon>frmVatReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVenderLedger.aspx.cs">
+      <DependentUpon>frmVenderLedger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVenderLedger.aspx.designer.cs">
+      <DependentUpon>frmVenderLedger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVenderPayment.aspx.cs">
+      <DependentUpon>frmVenderPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVenderPayment.aspx.designer.cs">
+      <DependentUpon>frmVenderPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendingCartMaster.aspx.cs">
+      <DependentUpon>frmVendingCartMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVendingCartMaster.aspx.designer.cs">
+      <DependentUpon>frmVendingCartMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendingCartVRSLinking.aspx.cs">
+      <DependentUpon>frmVendingCartVRSLinking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVendingCartVRSLinking.aspx.designer.cs">
+      <DependentUpon>frmVendingCartVRSLinking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendingExpenseCalculation.aspx.cs">
+      <DependentUpon>frmVendingExpenseCalculation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVendingExpenseCalculation.aspx.designer.cs">
+      <DependentUpon>frmVendingExpenseCalculation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendingExpensesReport.aspx.cs">
+      <DependentUpon>frmVendingExpensesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVendingExpensesReport.aspx.designer.cs">
+      <DependentUpon>frmVendingExpensesReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendingPurchaseReport.aspx.cs">
+      <DependentUpon>frmVendingPurchaseReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVendingPurchaseReport.aspx.designer.cs">
+      <DependentUpon>frmVendingPurchaseReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendorAttendance.aspx.cs">
+      <DependentUpon>frmVendorAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVendorAttendance.aspx.designer.cs">
+      <DependentUpon>frmVendorAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVersionInfo.aspx.cs">
+      <DependentUpon>frmVersionInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVersionInfo.aspx.designer.cs">
+      <DependentUpon>frmVersionInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVersionReleaseInfo.aspx.cs">
+      <DependentUpon>frmVersionReleaseInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVersionReleaseInfo.aspx.designer.cs">
+      <DependentUpon>frmVersionReleaseInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVersionReleaseRegister.aspx.cs">
+      <DependentUpon>frmVersionReleaseRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVersionReleaseRegister.aspx.designer.cs">
+      <DependentUpon>frmVersionReleaseRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVRSMeltage.aspx.cs">
+      <DependentUpon>frmVRSMeltage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVRSMeltage.aspx.designer.cs">
+      <DependentUpon>frmVRSMeltage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVRSMonthlyExpenseTopSheet.aspx.cs">
+      <DependentUpon>frmVRSMonthlyExpenseTopSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVRSMonthlyExpenseTopSheet.aspx.designer.cs">
+      <DependentUpon>frmVRSMonthlyExpenseTopSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVRSSpecialDiscountReport.aspx.cs">
+      <DependentUpon>frmVRSSpecialDiscountReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVRSSpecialDiscountReport.aspx.designer.cs">
+      <DependentUpon>frmVRSSpecialDiscountReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVRSTransactionDetails.aspx.cs">
+      <DependentUpon>frmVRSTransactionDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVRSTransactionDetails.aspx.designer.cs">
+      <DependentUpon>frmVRSTransactionDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVRSVDAttendanceReport.aspx.cs">
+      <DependentUpon>frmVRSVDAttendanceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVRSVDAttendanceReport.aspx.designer.cs">
+      <DependentUpon>frmVRSVDAttendanceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmYTDReport.aspx.cs">
+      <DependentUpon>frmYTDReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmYTDReport.aspx.designer.cs">
+      <DependentUpon>frmYTDReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalAppCreambell.asax.cs">
+      <DependentUpon>GlobalAppCreambell.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="New.Master.cs">
+      <DependentUpon>New.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="New.Master.designer.cs">
+      <DependentUpon>New.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportSalesInvoice.aspx.cs">
+      <DependentUpon>ReportSalesInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportSalesInvoice.aspx.designer.cs">
+      <DependentUpon>ReportSalesInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSalesInvoice_Old.aspx.cs">
+      <DependentUpon>ReportSalesInvoice_Old.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportSalesInvoice_Old.aspx.designer.cs">
+      <DependentUpon>ReportSalesInvoice_Old.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ucRadioButtonList.ascx.cs">
+      <DependentUpon>ucRadioButtonList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucRadioButtonList.ascx.designer.cs">
+      <DependentUpon>ucRadioButtonList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ucDropDown.ascx.cs">
+      <DependentUpon>ucDropDown.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucDropDown.ascx.designer.cs">
+      <DependentUpon>ucDropDown.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ucRoleFilters.ascx.cs">
+      <DependentUpon>ucRoleFilters.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucRoleFilters.ascx.designer.cs">
+      <DependentUpon>ucRoleFilters.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.Master" />
+    <Content Include="Reports\SaleInvoice.rdl" />
+    <Content Include="Reports\LoadSheet.rdl" />
+    <Content Include="ExcelTemplate\PurchInvoiceReceipt.xlsx" />
+    <Content Include="ExcelTemplate\FOCPurchaseInvoice.xlsx" />
+    <Content Include="ExcelTemplate\SaleOrder.xlsx" />
+    <Content Include="ExcelTemplate\OpeningStock.xlsx" />
+    <Content Include="ExcelTemplate\CustomerOpeningTemplate.xlsx" />
+    <Content Include="ExcelTemplate\CustomerDiscount.xlsx" />
+    <Content Include="PartyWiseSaleSummaryonDiscountPurchase.rdl" />
+    <Content Include="ExcelTemplate\SalePurchase-Template.xlsx" />
+    <Content Include="ExcelTemplate\GSTR1TemplateV12.xlsx" />
+    <Content Include="packages.config" />
+    <Content Include="New.Master" />
+    <Content Include="Reports\DailySaleRegister.rdl" />
+    <Content Include="Reports\MonthWiseRegsiter.rdl" />
+    <Content Include="Reports\SalePartyItemWise.rdl" />
+    <Content Include="Reports\SaleRegisterInvoiceWise.rdl" />
+    <Content Include="Reports\SaleRegisterItemWise.rdl" />
+    <Content Include="Reports\SaleRegisterPartyWiseDetail.rdl" />
+    <Content Include="Reports\PartyWiseSaleSummary.rdl" />
+    <Content Include="Reports\SKUWiseSale.rdl" />
+    <Content Include="Reports\SKUTypeWiseSale.rdl" />
+    <Content Include="Reports\PartyItemWiseSale.rdl" />
+    <Content Include="Reports\ItemWisePartySaleSummary.rdl" />
+    <Content Include="Reports\SaleInvoice1.rdl" />
+    <Content Include="Reports\ClaimSummaryReport.rdl" />
+    <Content Include="Reports\TargetReport.rdl" />
+    <Content Include="Reports\TargetDetailReport.rdl" />
+    <Content Include="Reports\ClaimDetailReport.rdl" />
+    <Content Include="Reports\ClaimReport.rdl" />
+    <Content Include="Reports\SaleRegister.rdl" />
+    <Content Include="Reports\SaleRegisterDateWiseReport.rdl" />
+    <Content Include="Reports\PartyWiseSaleSummaryDiscount.rdl" />
+    <Content Include="Reports\PartyWiseSaleSummaryonDiscountPurchase.rdl" />
+    <Content Include="Reports\SchemeDataReport.rdl" />
+    <Content Include="Reports\PurchaseRegister.rdl" />
+    <Content Include="Reports\MonthlyExpenseMonitoringSummary.rdl" />
+    <Content Include="Reports\PSROrderDetails.rdl" />
+    <Content Include="Reports\DiscountPartyWise.rdl" />
+    <Content Include="Reports\NonBuyerReport.rdl" />
+    <Content Include="Reports\ProductContributionReport.rdl" />
+    <Content Include="Reports\PSRWiseSalesReport.rdl" />
+    <Content Include="Reports\TargetVsAchivementReport.rdl" />
+    <Content Include="Reports\KeyCustomerReport.rdl" />
+    <Content Include="Reports\PartyWiseSaleSummaryonDiscountPurchase1.rdl" />
+    <Content Include="Reports\ReachReport.rdl" />
+    <Content Include="Reports\SaleRankingReport.rdl" />
+    <Content Include="Reports\MobileAppSyncReport.rdl" />
+    <Content Include="Reports\DailySaleTracking.rdl" />
+    <Content Include="Reports\YTDReport.rdl" />
+    <Content Include="Reports\FocusProductSale.rdl" />
+    <Content Include="Reports\PurchaseReceiptReport.rdl" />
+    <Content Include="Reports\SpecialRatesClaimReport.rdl" />
+    <Content Include="Reports\DiscountOutletSchemeReport.rdl" />
+    <Content Include="Reports\MrpDiscountClaim.rdl" />
+    <Content Include="Reports\CustomerLedger.rdl" />
+    <Content Include="Reports\CustomerOutstanding.rdl" />
+    <Content Include="Reports\FOCSaleInvoiceReport.rdl" />
+    <Content Include="Reports\DayBookReport.rdl" />
+    <Content Include="Reports\CustomerOutstandingAgingReport.rdl" />
+    <Content Include="Reports\POPInventoryTransactionReport.rdl" />
+    <Content Include="Reports\DistructionReport.rdl" />
+    <Content Include="Reports\AdjustmentEntryReport.rdl" />
+    <Content Include="Reports\PSR_DSR.rdl" />
+    <Content Include="Reports\PriceMasterReport.rdl" />
+    <Content Include="Reports\StockLedgerReport.rdl" />
+    <Content Include="Reports\VenderLedgerReport.rdl" />
+    <Content Include="Reports\ItemWiseSaleDetail.rdl" />
+    <Content Include="Reports\VRSMonthlyExpenseMonitoringSummary.rdl" />
+    <Content Include="Reports\CurrentVersionReleaseReport.rdl" />
+    <Content Include="Reports\VersionReleaseHistoryReport.rdl" />
+    <Content Include="Reports\VendingExpenseReportMonthly.rdl" />
+    <Content Include="Reports\VRS-VDAttendance.rdl" />
+    <Content Include="Reports\SaleInvoiceGST.rdl" />
+    <Content Include="Reports\SaleReturnGST.rdl" />
+    <Content Include="Reports\SchemeClaimReport.rdl" />
+    <Content Include="Reports\InvoiceOutstanding.rdl" />
+    <Content Include="ExcelTemplate\000059144.xlsx" />
+    <Content Include="ExcelTemplate\1001.xlsx" />
+    <Content Include="ExcelTemplate\600230.xlsx" />
+    <Content Include="ExcelTemplate\600755.xlsx" />
+    <Content Include="ExcelTemplate\601426.xlsx" />
+    <Content Include="ExcelTemplate\GSTR2TemplateV12.xlsx" />
+    <Content Include="ExcelTemplate\GSTR3TemplateV12.xlsx" />
+    <Content Include="ExcelTemplate\kumar.xlsx" />
+    <Content Include="ExcelTemplate\PurchaseIndentTemplate.xlsx" />
+    <Content Include="ExcelTemplate\SD_TEMPLATE.xlsx" />
+    <Content Include="ExcelTemplate\StockAdjustmentExcelTemplate.xlsx" />
+    <Content Include="Reports\ItemWisePartySaleSummary1.rdl" />
+    <Content Include="Reports\PurchaseReturnGST.rdl" />
+    <Content Include="Reports\ServiceInvoiceGST.rdl" />
+    <Content Include="Uploads\Book2.xlsx" />
+    <Content Include="Uploads\Manual Sales Order Kumar.xlsx" />
+    <Content Include="Uploads\OpeningStock - 10080478 - NILKANTH SALES AGENCY - 24-09-2018.xlsx" />
+    <Content Include="Uploads\OpeningStock.xlsx" />
+    <Content Include="Uploads\Order_File.xlsx" />
+    <Content Include="Uploads\PurchInvoiceReceipt %282%29.xlsx" />
+    <Content Include="Uploads\PurchInvoiceReceipt %284%29.xlsx" />
+    <Content Include="Uploads\SaleOrder %287%29.xlsx" />
+    <Content Include="Uploads\SaleOrder .xlsx" />
+    <Content Include="Uploads\SaleOrder.xls" />
+    <Content Include="Uploads\SaleOrder1.xls" />
+    <Content Include="Uploads\SaleOrder1.xlsx" />
+    <Content Include="Uploads\SaleOrder2.xlsx" />
+    <Content Include="Uploads\sales.xls" />
+    <Content Include="Uploads\SD_TEMPLATE %281%29.xlsx" />
+    <Content Include="Uploads\SD_TEMPLATE %282%29.xlsx" />
+    <Content Include="Uploads\SD_TEMPLATE.xlsx" />
+    <Content Include="Uploads\SD_TEMPLATE1 %281%29.xlsx" />
+    <Content Include="Uploads\SD_TEMPLATE1.xlsx" />
+    <Content Include="Uploads\so.xls" />
+    <Content Include="Uploads\so.xlsx" />
+    <Content Include="Uploads\StockAdjustmentExcelT R.S.AGENCY.xlsx" />
+    <Content Include="Uploads\StockAdjustmentExcelTemplate %281%29.xlsx" />
+    <Content Include="Uploads\StockAdjustmentExcelTemplate %284%29 %281%29.xlsx" />
+    <Content Include="Uploads\StockAdjustmentExcelTemplate.xlsx" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Downloads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11753</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:11789/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:11789/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

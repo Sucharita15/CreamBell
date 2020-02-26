@@ -1,0 +1,140 @@
+﻿body
+{
+  background-position: center center;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../images/finalnew1.jpg); 
+   background-size: cover;      
+}
+#outercontainer
+{
+    width:1240px;
+    height:500px;
+    margin: 0 auto;
+    margin-top:18px; 
+}
+.logoarea
+{
+    width:1240px;
+    float:right;
+    padding-right:30px;
+    text-align:right;
+}
+.logingap
+{
+    margin-left:930px;
+    width:310px;    
+    text-align:right;
+    overflow:hidden;
+    padding-top:20px;
+    padding-bottom:10px;
+    font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;    
+
+}
+.firstrow
+{
+    width:310px;    
+    text-align:center;
+    overflow:hidden;
+    padding-top:48px;
+    padding-right:20px;
+
+}
+.firstrow1
+{
+    width:310px;    
+    text-align:center;
+    overflow:hidden;
+    padding-top:30px;
+    padding-right:20px;
+
+}
+.firstrow2
+{
+    width:310px;    
+    text-align:center;
+    overflow:hidden;
+     padding-top:30px;
+    padding-right:20px;
+   
+
+}
+.username
+{
+    padding-top:0px;
+    float:left;
+}
+.sgnin
+{
+    padding-top:0px;
+    float:right;
+}
+.chklogin
+{
+    padding-top:0px;
+    margin-top:13px;
+
+    
+}
+.rnblogin
+{
+    font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+    color:#858585;
+    margin-top:10px;
+    line-height:14px;
+    
+
+}
+.input1 {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid #cbcbcb;
+    width: 270px;
+}
+.loginleftarea
+{    
+    margin-left:930px;
+    width:310px;
+    height:270px;
+    border-bottom-color: #cccccc;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+    border-top-style: solid;
+	border-top-color: #cccccc;
+	border-top-width: 2px;
+    overflow:hidden;
+}
+.gaprow{
+    height:30px;
+}
+.smallfrt {
+    font-family:Arial;
+    font-size:13px;
+    font-weight:bold;
+    
+}
+.smallfrt1 {
+    font-family:Arial;
+    font-size:10px;
+    font-weight:bold;
+    
+}
+.smalldetails {
+    font-family:Arial;
+    font-size:12px;
+    vertical-align:central;
+    font-weight:bold;
+    line-height:30px;
+}
+.newfooter
+{
+    font-family:Arial;
+    color:#7d7d7d;
+     font-size:8px;
+     text-align:center;
+}

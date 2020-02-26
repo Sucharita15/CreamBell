@@ -1,0 +1,36 @@
+﻿
+.div_zoom {
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    background-color: yellow;
+    box-shadow: 10px 10px;
+
+}
+
+div.polaroid {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  height:auto;
+  float:left;
+  padding:5px;
+  margin-bottom:20px;
+  background-color:white;
+}
+
+div.container {
+  padding:10px;
+}
+
+.div.polaroid:hover {      
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  transform: scale(1.4);    
+}
+
+.textShadowEffect {
+    text-shadow: 2px 2px 5px red;
+    
+}

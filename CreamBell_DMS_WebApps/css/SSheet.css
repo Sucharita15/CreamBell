@@ -1,0 +1,26 @@
+﻿.overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color:white;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    -moz-opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    z-index: 98;
+    width: 100%;
+}
+.overlayContent {
+    z-index: 100;
+    top: 50%;
+    left: 40%;
+    position: fixed;
+    color: white;
+    font-family: 'Agency FB',Verdana, 'Times New Roman';
+    font-size: large;
+    background-color: #0099FF;
+    width: 400px;
+    height: 20px;
+}

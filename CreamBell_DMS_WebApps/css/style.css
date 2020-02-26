@@ -1,0 +1,815 @@
+body {
+    font-family: "Trebuchet MS", "Helvetica", "Arial", "Verdana", "sans-serif";
+    font-size: 11px;
+    margin: 0px;
+}
+
+.MainContainer {
+    width: 99%;
+    float: left;
+    padding-left: 1%;
+    margin-bottom: 10px;
+}
+
+span.multiselect-native-select {
+    position: relative
+}
+
+    span.multiselect-native-select select {
+        border: 0 !important;
+        clip: rect(0 0 0 0) !important;
+        height: 1px !important;
+        margin: -1px -1px -1px -3px !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        position: absolute !important;
+        width: 1px !important;
+        left: 50%;
+        top: 30px
+    }
+
+.multiselect-container {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+    .multiselect-container .input-group {
+        margin: 5px
+    }
+
+    .multiselect-container .multiselect-reset .input-group {
+        width: 93%
+    }
+
+    .multiselect-container > li {
+        padding: 0
+    }
+
+        .multiselect-container > li > a.multiselect-all label {
+            font-weight: 700
+        }
+
+        .multiselect-container > li.multiselect-group label {
+            margin: 0;
+            padding: 3px 20px;
+            height: 100%;
+            font-weight: 700
+        }
+
+        .multiselect-container > li.multiselect-group-clickable label {
+            cursor: pointer
+        }
+
+        .multiselect-container > li > a {
+            padding: 0
+        }
+
+            .multiselect-container > li > a > label {
+                margin: 0;
+                height: 100%;
+                cursor: pointer;
+                font-weight: 400;
+                padding: 3px 20px 3px 40px
+            }
+
+                .multiselect-container > li > a > label.checkbox, .multiselect-container > li > a > label.radio {
+                    margin: 0
+                }
+
+                .multiselect-container > li > a > label > input[type=checkbox] {
+                    margin-bottom: 5px
+                }
+
+.btn-group > .btn-group:nth-child(2) > .multiselect.btn {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+
+.form-inline .multiselect-container label.checkbox, .form-inline .multiselect-container label.radio {
+    padding: 3px 20px 3px 40px
+}
+
+.form-inline .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio] {
+    margin-left: -20px;
+    margin-right: 0
+}
+
+
+.FirstColumn {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+
+.FirstInnerClm {
+    width: 36%;
+    float: left
+}
+
+    .FirstInnerClm label {
+        float: left;
+        margin: 6px 20px 0 0;
+    }
+
+    .FirstInnerClm div {
+        float: left;
+    }
+
+
+    .FirstInnerClm select {
+        width: 229px;
+        padding: 4px 0 !important
+    }
+
+    .FirstInnerClm input.ReportBTN {
+        padding: 4px 10px 4px 10px;
+        background: #0085ca;
+        color: #fff;
+        float: right;
+    }
+
+.SecondInnerClm {
+    width: 31%;
+    float: left;
+}
+
+    .SecondInnerClm label {
+        float: left;
+        margin: 3px 36px 0 0;
+    }
+
+    .SecondInnerClm input {
+        width: 55.7% !important;
+        padding: 2px 0 3px 0;
+    }
+
+.ThirdInnerClm {
+    width: 29%;
+    float: left;
+}
+
+    .ThirdInnerClm label {
+        margin: 4px 56px 0px 0;
+        float: left;
+    }
+
+    .ThirdInnerClm input {
+        width: 59.7% !important;
+        padding: 2px 0 3px 0;
+    }
+
+.FourthCLM {
+    width: 11%;
+    float: left;
+    margin-left: 80px;
+}
+
+.LastCLM {
+    width: 24%;
+    float: left;
+}
+
+    .LastCLM label {
+        float: left;
+        margin: 6px 28px 0 0;
+    }
+
+    .LastCLM div {
+        float: left;
+    }
+
+    .LastCLM input {
+        width: 229px !important;
+        padding: 4px 0 !important
+    }
+
+    .LastCLM.forMargin label {
+        margin-right: 15px;
+    }
+
+.FourthCLM.ForLabel_Margin label {
+    margin-left: 10px;
+}
+
+
+
+.SecondInnerClm2 label {
+    float: left;
+    margin: 3px 94px 0 0;
+}
+
+.SecondInnerClm2 textarea {
+    width: 55.7% !important;
+    padding: 0;
+    height: 25px;
+}
+
+.SecondInnerClm2 {
+    width: 31%;
+    float: left;
+    margin-top: 10px;
+}
+
+.nav > li > a:hover, .nav > li:hover > a {
+    background: #36f !important;
+    color: #fff;
+    border-bottom: 1px solid #03f;
+    width: auto;
+}
+
+.lastButtonCheckBox {
+    float: left;
+    margin: -7px 0px 0 0;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        left: 105%;
+    }
+
+
+.ReportSearch {
+    background-position: 0% 0%;
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 11px;
+    padding: 5px 7px 6px 8px;
+    text-decoration: none;
+    margin-bottom: 0px;
+    background-color: #3498db;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+    .ReportSearch:hover {
+        background: #3cb0fd;
+        background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+        text-decoration: none;
+    }
+
+.ModalPoupBackgroundCssClass {
+    background-color: Black;
+    filter: alpha(opacity=90);
+    opacity: 0.8;
+}
+
+.modalPopup {
+    background-color: #FFFFFF;
+    border-width: 2px;
+    border-style: inset;
+    width: auto;
+    height: auto;
+}
+
+.hiddencol {
+    display: none;
+}
+
+.pnlCSS {
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.auto-style2 {
+    width: auto;
+    text-align: left !important;
+}
+
+.auto-style3 {
+    width: 3%;
+}
+
+.auto-style5 {
+    width: 10%;
+}
+
+.common_button {
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 5px 6px;
+    background: #3498db;
+    cursor: pointer;
+}
+
+.top-title {
+    text-align: center;
+    padding: 8px 0px;
+    background: #1564ad;
+}
+
+    .top-title span {
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+.saleorder_select {
+    height: 28px;
+    width: 95%;
+    border: 1px solid #ccc;
+}
+
+.saleorder_input {
+    height: 23px;
+    width: 95%;
+    border: 1px solid #ccc;
+}
+
+.product_details_Grid {
+    margin: 15px 0px;
+}
+
+.polaroid.scheme_table_details {
+    width: 100%;
+    float: left;
+}
+
+.bottom_Grid_section {
+    width: 1450px;
+    overflow-wrap:;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.forLeftSide {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+
+td.auto-style6.forFontSize select {
+    font-size: 10px;
+}
+
+td.forFontSize select {
+    font-size: 10px;
+}
+
+.for_left_side {
+    float: right;
+}
+
+
+.option_menu {
+    float: left;
+}
+
+.radio_button {
+    float: left;
+    margin-top: 16px;
+}
+
+.option_menu span {
+    margin-right: 38px;
+}
+
+.for_left_side input {
+    margin-right: 7px;
+}
+
+.radio_button span {
+    margin-right: 18px;
+}
+
+.for_excel_margin {
+    float: right;
+    margin-left: 44px;
+}
+
+/*middle_content{
+    background:#CDE2F1;
+}*/
+.input_styling_here {
+    width: 355px;
+    top: 15.5%;
+    left: 30%;
+    position: absolute;
+}
+
+.for_upload_button {
+    position: absolute;
+    top: 14.5%;
+    left: 58%;
+}
+
+/*.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+position: absolute;
+z-index: 1;
+top: -5px;
+left: 105%;
+}
+
+*/
+
+
+
+
+
+
+.top_menu {
+    float: left;
+    width: 100%;
+    background: #fff;
+}
+
+.headertopstrip {
+    background: #2980B9;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    font-family: Calibri;
+}
+
+.customername {
+    float: left;
+    width: 35%;
+    padding-left: 2%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.copyright a {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #1564ad;
+    border-top: 1px solid #1564ad;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sub_title span {
+    font-size: 15px;
+    color: #fff;
+    font-family: Calibri;
+    background: #1564ad;
+    display: block;
+    padding: 6px 10px
+}
+
+.common_btn {
+    border: 1px solid #1e5282;
+    color: #fff;
+    padding: 10px 10px;
+    background: #1564ad;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.exportbtn {
+    width: 35px;
+    height: 35px;
+    background: url('../Images/export-to-excel.png') no-repeat;
+    cursor: pointer;
+    border: none;
+    margin: 9px 0px 0px 3px;
+}
+
+.clearfix {
+    display: block;
+    clear: both;
+}
+
+.sub_title {
+    margin-bottom: 10px;
+}
+
+td.itemfeild {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+table.profile_table {
+    width: 100%;
+}
+
+    table.profile_table tr td .fieldset {
+        border: 1px solid #b1b1b1;
+        border-radius: 4px;
+        padding: 8px 10px;
+        width: 90%;
+    }
+
+    table.profile_table tr td:nth-child(odd) {
+        width: 10%;
+    }
+
+    table.profile_table tr td:nth-child(even) {
+        width: 25%;
+    }
+
+/*--------------------------------------------*/
+
+.TableClass {
+    width: 60%;
+    float: left;
+}
+
+/*.labelAlert {
+    position: absolute;
+    top: -27px;
+    left: 557px;
+    color: #fff !important;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}*/
+
+.labelAlert {
+    position: absolute;
+    top: -32px;
+    left: 38%;
+    color: #dc1e1e !important;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #fff;
+    /*box-shadow: 0px 0px 11px 1px #000;*/
+    /*display:none;*/
+    z-index: 99999;
+    border-radius: 4px;
+    padding: 1px 12px 1px 12px;
+}
+
+.MainTableClass {
+    width: 100%;
+    float: left;
+    display: block;
+    position: relative;
+    margin-top: -8px;
+}
+
+.GridSection {
+    width: 40%;
+    float: left;
+}
+
+.mainSection {
+    width: 100%;
+    float: left;
+}
+
+.firstSection {
+    float: left;
+}
+
+    .firstSection span {
+        float: left;
+        margin-top: 9px;
+        margin-right: 16px;
+    }
+
+    .firstSection div {
+        float: left;
+    }
+
+.secondSection {
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.RadioButton {
+    float: left;
+    margin: 1px 0 0 30px;
+    width: 29%;
+}
+
+.CstmButton {
+    float: left;
+}
+
+.MainSecondSection {
+    width: 100%;
+    float: left;
+}
+
+.ThirdSection {
+    float: left;
+    margin-top: 5px;
+}
+
+    .ThirdSection span {
+        float: left;
+        margin-right: 49px;
+    }
+
+    .ThirdSection div {
+        float: left;
+    }
+
+/*.lastButton {
+    margin: 6px 0px 0px 17px;
+    display: block;
+    width: 11%;
+    float: left;
+}*/
+.lastButton {
+    margin: 6px 0px 0px 34px;
+    display: block;
+    width: 9%;
+    float: left;
+}
+
+.forAbsolute {
+    position: relative;
+}
+
+.onclickBtn:after {
+    position: absolute;
+    right: 28px;
+    top: 9px;
+    content: '';
+    width: 12px;
+    height: 2px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.onclickBtn:before {
+    position: absolute;
+    right: 28px;
+    top: 9px;
+    content: '';
+    width: 12px;
+    height: 2px;
+    cursor: pointer;
+    background: #fff;
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+}
+
+.onclickBtn.Active:before {
+    transform: rotate(-90deg);
+}
+
+.forToggle {
+    max-height: 250px;
+    overflow: hidden;
+    transition: max-height 0.25s ease-in-out 0s;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+    .forToggle.active {
+        height: auto;
+        max-height: 22px;
+        transition: max-height 0.25s ease-in-out 0s;
+    }
+/*-----------------------------------------*/
+
+.cashreportbox {
+    width: 25%;
+    border-right: 1px solid #4A3C8C;
+    padding-right: 35px;
+}
+
+.cashreportbox2 {
+    width: 25%;
+    padding-right: 35px;
+}
+
+.cashtd {
+    text-align: center !important;
+}
+/**16-01-2020**/
+.glyphicon {
+    font-weight: bold;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: bottom;
+}
+
+.for_left_side.last {
+    margin-top: 16px;
+}
+
+input[type="text"], select {
+    border: 1px solid #c4c4c4;
+    width: 150px !important;
+    height: auto !important;
+    font-size: 13px;
+    padding: 7px 4px 7px 4px !important;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+}
+
+input[type="submit"] {
+    height: 21px !important;
+}
+
+button[type="button"] {
+    min-width: 120px;
+    width: auto !important;
+    text-align: left;
+}
+
+.multiselect-native-select .btn-group {
+    width: auto !important;
+    min-width: 120px !important;
+}
+
+.input-group-btn > .btn.multiselect-clear-filter {
+    min-width: auto;
+    width: auto;
+}
+
+.multiselect-container .radio input[type="radio"] {
+    display: none;
+}
+
+.multiselect-container .input-group .form-control {
+    width: 100% !important;
+}
+
+td {
+    padding-bottom: 5px;
+}
+
+fieldset .paneltbl .checkboxlistHeader {
+    background-color: aliceblue;
+    vertical-align: top;
+    text-align: left;
+    width: 11%;
+    float: left;
+    max-height: inherit !important;
+}
+
+.checkboxlistHeader span {
+    display: block;
+}
+
+.checkboxlistHeader table {
+    max-height: 80px;
+    overflow-y: auto;
+    display: block;
+    width: 100%;
+}
+
+fieldset .paneltbl {
+    width: 100%;
+    float: left;
+    background-color: aliceblue;
+}
+
+.checkboxlistHeader table td {
+    padding-bottom: 0px;
+}
+
+#ctl00_ContentPage_PanelFilter {
+    height: auto !important;
+}

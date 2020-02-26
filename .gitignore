@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/CreamBell_DMS_WebApps/v15
+/.vs
+/CreamBell.Report/bin/Debug
+/CreamBell_DMS_WebApps/bin
+/CreamBell_DMS_WebApps/obj
+/CreamBell.Database/bin
+/CreamBell.Database/obj
+*.rdl
+/CreamBell.Database/CreamBell.Database.dbmdl
+/CreamBell.Database/CreamBell.Database.jfm

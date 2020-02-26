@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>CreamBell.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{1cc9ef72-b462-4af9-8334-d14f9d2a4d45}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>CreamBell.Database</RootNamespace>
+    <AssemblyName>CreamBell.Database</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="StoredProcedures" />
+    <Folder Include="Views" />
+    <Folder Include="Tables" />
+    <Folder Include="Functions" />
+    <Folder Include="ReleaseScripts" />
+    <Folder Include="StoredProcedures\New" />
+    <Folder Include="StoredProcedures\Old" />
+    <Folder Include="StoredProcedures\Updated" />
+    <Folder Include="Sprint-1" />
+    <Folder Include="Sprint-1\Functions" />
+    <Folder Include="Sprint-1\StoreProcedures" />
+    <Folder Include="Sprint-2" />
+    <Folder Include="Sprint-2\Functions" />
+    <Folder Include="Sprint-2\StoreProcedures" />
+    <Folder Include="Sprint-4" />
+    <Folder Include="Sprint-4\StoreProcedures" />
+    <Folder Include="Sprint-5" />
+    <Folder Include="Sprint-5\DML" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReleaseScripts\MenuAccess.sql" />
+    <None Include="StoredProcedures\New\[dbo].[ACX_USP_EXPENSEDETAIL_TI_Version].sql" />
+    <None Include="StoredProcedures\Old\[dbo].[ACX_USP_EXPENSEDETAIL].sql" />
+    <None Include="StoredProcedures\Old\Acx_getUserCredentials.sql" />
+    <None Include="StoredProcedures\Updated\Acx_getUserCredentials.sql" />
+    <None Include="Sprint-1\StoreProcedures\USP_StatusReport.sql" />
+    <None Include="Sprint-1\StoreProcedures\ACX_USP_TargetAchivementReport.sql" />
+    <None Include="Sprint-1\Functions\UDF_GetSALESHIERARCHY.sql" />
+    <None Include="Sprint-1\StoreProcedures\ACX_USP_PRODUCTCONTRIBUTIONREPORT.sql" />
+    <None Include="Sprint-2\StoreProcedures\ACX_USP_SALESREGISTERMONTHLY.sql" />
+    <None Include="Sprint-2\StoreProcedures\SP_SALESUMMARYPARTYITEMWISE.sql" />
+    <None Include="Sprint-2\StoreProcedures\SP_SALEREGISTERINVOICEWISE.sql" />
+    <None Include="Sprint-2\StoreProcedures\SP_SALEREGISTERITEMWISE.sql" />
+    <None Include="Sprint-2\StoreProcedures\ACX_USP_SaleRegisterPartyWise.sql" />
+    <None Include="Sprint-2\StoreProcedures\ACX_USP_ItemTypeWiseSaleReport.sql" />
+    <None Include="Sprint-2\StoreProcedures\ACX_USP_ItemWisePartySaleSummary.sql" />
+    <None Include="Sprint-2\StoreProcedures\USP_ITEMWISESALESUMMARYREPORT.sql" />
+    <None Include="Sprint-2\StoreProcedures\ACX_USP_PurchaseRegister.sql" />
+    <None Include="Sprint-2\StoreProcedures\ACX_USP_PurchaseRegister_SummaryView.sql" />
+    <None Include="Sprint-2\StoreProcedures\ACX_USP_PurchaseRegister_SummaryView2.sql" />
+    <None Include="Sprint-2\StoreProcedures\ACX_USP_VRSTransactionDetails.sql" />
+    <None Include="Sprint-2\StoreProcedures\ACX_DESTRUCTIONREPORT.sql" />
+    <None Include="Sprint-2\StoreProcedures\ACX_USP_PSRDSR.sql" />
+    <None Include="Sprint-2\StoreProcedures\ACX_USP_PSRDSR_HEADER.sql" />
+    <None Include="Sprint-2\StoreProcedures\ACX_GETALLPRICEGROUP.sql" />
+    <None Include="Sprint-2\StoreProcedures\ACX_GETProductPriceMaster.sql" />
+    <None Include="Sprint-2\StoreProcedures\Fn_GetOpeningBalanceForVenderLedger.sql" />
+    <None Include="Sprint-2\StoreProcedures\Fn_GetClosingBalanceForVenderLedger.sql" />
+    <None Include="Sprint-2\StoreProcedures\ACX_GetVenderLedgerDetail.sql" />
+    <None Include="Sprint-4\StoreProcedures\ACX_VRS_MonthlySummerySheet_CLAIM.sql" />
+    <None Include="Sprint-4\StoreProcedures\ACX_MonthlySummerySheet.sql" />
+    <None Include="Sprint-4\StoreProcedures\ACX_MonthySummarySheet_Discount.sql" />
+    <None Include="Sprint-4\StoreProcedures\ACX_SCHEMECLAIMREPORT.sql" />
+    <None Include="Sprint-5\DML\ACX_DailySaleTrackingReport.sql" />
+    <None Include="Sprint-5\DML\ACX_USP_REACHREPORT.sql" />
+    <None Include="Sprint-5\DML\ACX_USP_KEYCUSTOMERSALEREPORT.sql" />
+    <None Include="Sprint-5\DML\UDF_GETCHANNELGROUPBYUSER.sql" />
+    <None Include="Sprint-5\DML\UDF_GetSALESHIERARCHY.sql" />
+    <None Include="Sprint-5\DML\ACX_USP_SchemeDataReport.sql" />
+    <None Include="Sprint-5\DML\USP_StatusReport.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sprint-1\Functions\UDF_GETCHANNELGROUPBYUSER.sql" />
+    <None Include="Sprint-1\StoreProcedures\ACX_USP_NON_BUYER.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sprint-2\StoreProcedures\Usp_ITEMSKUWISE.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sprint-2\StoreProcedures\SP_SALEREGISTER _Updated.sql" />
+    <None Include="Sprint-2\StoreProcedures\SP_SALEREGISTER.sql" />
+    <Build Include="StoredProcedures\New\[SP_PARTYWISESALESUMMARY_TI_Version].sql" />
+    <None Include="StoredProcedures\Old\[SP_PARTYWISESALESUMMARY].sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sprint-4\StoreProcedures\ACX_MonthlySummerySheet_CLAIM.sql" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Dell\Desktop\CreamBell-Release</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="bin/ClosedXML.dll">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="bin/CreamBell_DMS_WebApps.dll">
+      <publishTime>10/12/2019 18:37:45</publishTime>
+    </File>
+    <File Include="bin/CreamBell_DMS_WebApps.dll.config">
+      <publishTime>09/17/2019 20:58:19</publishTime>
+    </File>
+    <File Include="bin/CreamBell_DMS_WebApps.pdb">
+      <publishTime>10/12/2019 18:37:45</publishTime>
+    </File>
+    <File Include="bin/DropDownCheckBoxes.dll">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="bin/Elmah.dll">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="bin/EPPlus.dll">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>08/30/2019 09:20:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.ProcessingObjectModel.DLL">
+      <publishTime>08/30/2019 09:20:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.DLL">
+      <publishTime>08/30/2019 09:20:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Types.dll">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="CreamBell_DMS_WebApps.csproj.user">
+      <publishTime>10/12/2019 18:37:43</publishTime>
+    </File>
+    <File Include="css/acxiom.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/acxiom1.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/axiomhome.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/bootstrap-iso.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/bootstrap-multiselect.css">
+      <publishTime>07/30/2019 10:47:53</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/BootStrapNew.css">
+      <publishTime>07/24/2019 16:10:34</publishTime>
+    </File>
+    <File Include="css/btnSearch.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/Buttons.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/cssLogin/style.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/Dashboard.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/DropDown.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/erpLook.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/GhostButton.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/jquery-ui.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/picnew.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/Polaroide.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/SSheet.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>08/30/2019 09:49:57</publishTime>
+    </File>
+    <File Include="css/textBoxDesign.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/ui-controls.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/ui-css.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="css/w3.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Dashboard.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="dashboard/jquery.min.js">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="dashboard/jquerysctipttop.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="dashboard/waypoints.min.js">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="DLLs/AjaxControlToolkit.dll">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="DLLs/DropDownCheckBoxes.dll">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="DLLs/itextsharp.dll">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Error.html">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/000059144.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/1001.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/600230.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/600755.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/601426.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/CustomerDiscount.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/CustomerOpeningTemplate.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/FOCPurchaseInvoice.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/GSTR1TemplateV12.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/GSTR2TemplateV12.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/GSTR3TemplateV12.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/kumar.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/OpeningStock.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/PurchaseIndentTemplate.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/PurchInvoiceReceipt.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/SaleOrder.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/SalePurchase-Template.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/SD_TEMPLATE.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ExcelTemplate/StockAdjustmentExcelTemplate.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmAdjustmentEntry.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmAdjustmentEntryReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmAreaMonthMaterialSale.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmBulkBuyerReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmCartandOperatorLinking.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmCartOperatorMaster.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmCollectionEntry.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmCollectionReport.aspx">
+      <publishTime>10/10/2019 22:07:04</publishTime>
+    </File>
+    <File Include="frmCollectionReport1.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmCreditNoteReport.aspx">
+      <publishTime>10/10/2019 23:25:38</publishTime>
+    </File>
+    <File Include="frmCurrentStock.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmCustomerLedger.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmCustomerOutstandingReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmCustomerOutStandingWriteOff.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmCustomerPartyGroup.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmCustomerPartyMaster.aspx">
+      <publishTime>10/02/2019 15:24:18</publishTime>
+    </File>
+    <File Include="frmCustomerPartyMasterNew.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmCustomerWiseSaleReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmDailySaleRegister.aspx">
+      <publishTime>10/02/2019 21:06:41</publishTime>
+    </File>
+    <File Include="frmDailySaleTrackingReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmDamageReasonCode.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmDashboard.aspx">
+      <publishTime>10/10/2019 22:26:24</publishTime>
+    </File>
+    <File Include="frmDebitNoteReport.aspx">
+      <publishTime>10/10/2019 23:25:38</publishTime>
+    </File>
+    <File Include="FrmDeepFreezerSalesReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmDetailProductMaster.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmDiscountMaster.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmDiscountOutletSchemeReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmDiscountPartyWiseReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmDiscountView.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmDiscountViewNew.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmDistributorIncentiveReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmDistructionReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmExcelUploadAdj.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmExpenseCalculation.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmExpenseMonitoringSummary.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmFOCInvoiceSave.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmFOCPurchaseInvoice.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmFOCSaleInvoiceReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmFocusProductSale.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmFreightHandlingReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmGSTR1Page.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmIndentConsolidationToSO.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmIndentVSInvoice.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmInvoiceGeneration.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmInvoicePrepration.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmInvoiceSave.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmItemSKUWise.aspx">
+      <publishTime>10/10/2019 23:25:38</publishTime>
+    </File>
+    <File Include="frmItemTypeWiseSaleReport.aspx">
+      <publishTime>10/10/2019 22:07:04</publishTime>
+    </File>
+    <File Include="frmItemWisePartySaleSummary.aspx">
+      <publishTime>10/10/2019 22:07:04</publishTime>
+    </File>
+    <File Include="frmItemWiseSaleDetail.aspx">
+      <publishTime>10/12/2019 17:20:39</publishTime>
+    </File>
+    <File Include="frmKeyCustomerSale.aspx">
+      <publishTime>09/22/2019 16:02:25</publishTime>
+    </File>
+    <File Include="frmLoadSheetCreation.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmLoadSheetList.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmManualClaim.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmMobileAppSyncReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmMonthlySaleRegister.aspx">
+      <publishTime>10/10/2019 22:07:04</publishTime>
+    </File>
+    <File Include="frmMrpDiscountClaimReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmNewCollectionEntry.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmNonBuyerReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmNotificationMaster.aspx">
+      <publishTime>08/02/2019 18:00:46</publishTime>
+    </File>
+    <File Include="frmOpenSalesOrderReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmOutStandingAgingReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPartyWiseSaleReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPartyWiseSaleSummary.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPartyWiseSaleSummaryDisc.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPartyWiseSchemeDetailsonPurchaseRaterReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPendingPurchaseReciept.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPOPInventoryIssueToPSR.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPOPInventoryReceipt.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPOPInventoryTransactionReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPOPPurchaseRegisterReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPowerAppDisplay.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPriceMaster.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPriceMasterReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmProductContributionReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmProductDistructionNote.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmProductMaster.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPSRBeatMaster.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPSRCustomerMaster.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPSRDistributorLinkingMaster.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPSRDSRReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPSROrderDetails.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPSRWiseSalesReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPurchaseAutoClaim.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPurchaseIndent.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPurchaseIndentList.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPurchaseInvoiceReceipt.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPurchaseInvoiceReceiptManual.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPurchaseReceiptReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPurchaseRegister.aspx">
+      <publishTime>10/10/2019 22:07:04</publishTime>
+    </File>
+    <File Include="frmPurchaseRegisterReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPurchaseReturn.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPurchaseReturnList.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPurchaseReversal.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPurchReceiptList.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmPurchUnPostList.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmReachReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmReportServiceInvoice.aspx">
+      <publishTime>10/10/2019 23:25:37</publishTime>
+    </File>
+    <File Include="frmRetailerStatusreport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmRunningSchemeDetail.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmRunningSchemeDetailNew.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSaleInvoiceReturn.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSaleOrder.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSaleOrderDetails.aspx">
+      <publishTime>10/08/2019 22:10:11</publishTime>
+    </File>
+    <File Include="frmSaleOrderDetailsNew.aspx">
+      <publishTime>10/08/2019 22:20:32</publishTime>
+    </File>
+    <File Include="frmSaleOrder_old.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSalePartyItemWise.aspx">
+      <publishTime>10/12/2019 16:58:42</publishTime>
+    </File>
+    <File Include="frmSaleRankingReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSaleRegister.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSaleRegisterDateWiseReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSaleRegisterDateWiseReportNew.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSaleRegisterInvoiceWise.aspx">
+      <publishTime>10/10/2019 22:07:04</publishTime>
+    </File>
+    <File Include="frmSaleRegisterItemWise.aspx">
+      <publishTime>10/10/2019 22:07:04</publishTime>
+    </File>
+    <File Include="frmSaleRegisterPartyWise.aspx">
+      <publishTime>10/10/2019 22:07:04</publishTime>
+    </File>
+    <File Include="frmSaleRegisterProductGroupReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSaleRegisterReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSalesOrderPreList.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSchemeDataReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSchemeExpenseReport.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSchemeMaster.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSchemeTypeMaster.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSDPurchaseInvoiceReceipt.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSDSaleOrder.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSecondaryDiscountUpload.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSecondaryDistructionNote.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmServiceInvoiceReversal.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmServiceInvoicing.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSOCreationIndent.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="frmSpecialRatesClaimReport.aspx">
+      <publishTime>09/23/2019 22:50:05</publishTime>
+    </File>
+    <File Include="frmStockAdjustment.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmStockLedgerReport.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmStockLocationTransfer.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmStockMovementReport.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmStockMoveToNonSaleable.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmStockSnapshot.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmTargetDetailReport.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmTargetMaster.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmTargetMasterSKU.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmTargetReport.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmTargetSummaryReport.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmTargetVsAchivement.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmTemplatePage.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmUseNouseReport.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmUserLoginDetails.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmUserProfile.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVatCalculationFormat.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVatReport.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVenderLedger.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVenderPayment.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVendingCartMaster.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVendingCartVRSLinking.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVendingExpenseCalculation.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVendingExpensesReport.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVendingPurchaseReport.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVendorAttendance.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVersionInfo.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVersionReleaseInfo.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVersionReleaseRegister.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVRSMeltage.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVRSMonthlyExpenseTopSheet.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVRSSpecialDiscountReport.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVRSTransactionDetails.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmVRSVDAttendanceReport.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="frmYTDReport.aspx">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="GlobalAppCreambell.asax">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="gridviewScroll.min.js">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>10/10/2019 22:26:15</publishTime>
+    </File>
+    <File Include="Images/03a.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/1920x1080new.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/1920x1080_2.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/1leftarrow.ico">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/512x512.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/arrow-down-icon-black.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/arrow.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/arrowhl.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/arrowhr.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/arrowvb.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/arrowvt.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/bar.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/bg.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/bg1.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/bg2.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/bgLogo1080p.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/bgYellow.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/bg_2000pix.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/calc.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/calculator.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/calculator1.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/calculator2.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/calendar.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/calendar.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/CB-logo.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/creambelltitleLogo.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/dlogo.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/dlogobig.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/DownloadTemplate.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/excel-24.ico">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/excelexport.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/favicon %281%29.ico">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/favicon.ico">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/finalnew1.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/home.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/icon.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/img1.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/img2.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/img3.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/img4.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/newbg1.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/newbg2.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/newbg3.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/newbg4.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/newbg5.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/password.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/PDF_file_icon.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/printicon.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/Profile.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/refresh.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/searchicon.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/signinbtn.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/test2.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/test3.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/test6.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/test7.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Images/username.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Javascript/BackButtonDisable.js">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Javascript/bootstrap-multiselect.js">
+      <publishTime>07/24/2019 16:12:13</publishTime>
+    </File>
+    <File Include="Javascript/bootstrap.min.js">
+      <publishTime>07/24/2019 16:07:07</publishTime>
+    </File>
+    <File Include="Javascript/custom.js">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Javascript/DateValidation.js">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Javascript/index.js">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Javascript/jquery-2.1.1.min.js">
+      <publishTime>07/22/2019 16:30:31</publishTime>
+    </File>
+    <File Include="Javascript/jquery.min.js">
+      <publishTime>07/24/2019 15:59:36</publishTime>
+    </File>
+    <File Include="Javascript/jquery183.min.js">
+      <publishTime>07/26/2019 17:11:36</publishTime>
+    </File>
+    <File Include="jquery/jquery-1.4.2.min.js">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="jquery/jquery.counterup.js">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="jquery/jquery.counterup.min.js">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="jquery/jquery.min.js">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="jquery/jquery.searchabledropdown-1.0.8.min.js">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="jquery/ScrollableGridViewPlugin_ASP.NetAJAXmin.js">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+    <File Include="JqueryColorBox/Active.JPG">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/add.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/ajax-loader.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/browser-opera-icon.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/chrome.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/colorbox.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/controls.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/CustomColorBox.js">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/del.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/drop.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/drop.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/False.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/Fav.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/footer-bottom.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/ftv2mlastnode.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/ftv2plastnode.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/ftv2pnode.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/Header1.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/Header2.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/Header3.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/Header4.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/Header5.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/Header6.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/Header7.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/ie.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/InActive.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/InActive.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/InActive1.JPG">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/jquery.colorbox.js">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/jqueryColorbox1.10.2.min.js">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/line.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/loading.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/page-first-disabled.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/page-first.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/page-last-disabled.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/page-last.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/page-next-disabled.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/page-next.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/page-prev-disabled.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/page-prev.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/safari.gif">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/section-bg.png">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/True.JPG">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryColorBox/user-icon1.jpg">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryNotify/jquery.notice.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryNotify/jquery.notice.js">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="JqueryNotify/jquery2.0.2.min.js">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Main.Master">
+      <publishTime>10/10/2019 23:18:54</publishTime>
+    </File>
+    <File Include="New.Master">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/01/2019 23:33:17</publishTime>
+    </File>
+    <File Include="PartyWiseSaleSummaryonDiscountPurchase.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/AdjustmentEntryReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/ClaimDetailReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/ClaimReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/ClaimSummaryReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/CurrentVersionReleaseReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/CustomerLedger.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/CustomerOutstanding.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/CustomerOutstandingAgingReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/DailySaleRegister.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/DailySaleTracking.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/DayBookReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/DiscountOutletSchemeReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/DiscountPartyWise.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/DistructionReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/FOCSaleInvoiceReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/FocusProductSale.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/InvoiceOutstanding.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/ItemWisePartySaleSummary.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/ItemWisePartySaleSummary1.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/ItemWiseSaleDetail.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/KeyCustomerReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/LoadSheet.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/MobileAppSyncReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/MonthlyExpenseMonitoringSummary.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/MonthWiseRegsiter.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/MrpDiscountClaim.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/NonBuyerReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/PartyItemWiseSale.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/PartyWiseSaleSummary.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/PartyWiseSaleSummaryDiscount.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/PartyWiseSaleSummaryonDiscountPurchase.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/PartyWiseSaleSummaryonDiscountPurchase1.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/POPInventoryTransactionReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/PriceMasterReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/ProductContributionReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/PSROrderDetails.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/PSRWiseSalesReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/PSR_DSR.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/PurchaseReceiptReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/PurchaseRegister.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/PurchaseReturnGST.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/ReachReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SaleInvoice.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SaleInvoice1.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SaleInvoiceGST.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SalePartyItemWise.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SaleRankingReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SaleRegister.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SaleRegisterDateWiseReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SaleRegisterInvoiceWise.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SaleRegisterItemWise.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SaleRegisterPartyWiseDetail.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SaleReturnGST.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SchemeClaimReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SchemeDataReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/ServiceInvoiceGST.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SKUTypeWiseSale.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SKUWiseSale.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/SpecialRatesClaimReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/StockLedgerReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/TargetDetailReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/TargetReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/TargetVsAchivementReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/VenderLedgerReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/VendingExpenseReportMonthly.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/VersionReleaseHistoryReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/VRS-VDAttendance.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/VRSMonthlyExpenseMonitoringSummary.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Reports/YTDReport.rdl">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="ReportSalesInvoice.aspx">
+      <publishTime>10/10/2019 23:25:37</publishTime>
+    </File>
+    <File Include="ReportSalesInvoice_Old.aspx">
+      <publishTime>10/10/2019 22:44:26</publishTime>
+    </File>
+    <File Include="Scripts/GridviewScroll.css">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Scripts/gridviewScroll.min.js">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/Book2.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/Manual Sales Order Kumar.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/OpeningStock - 10080478 - NILKANTH SALES AGENCY - 24-09-2018.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/OpeningStock.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/Order_File.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/PurchInvoiceReceipt %282%29.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/PurchInvoiceReceipt %284%29.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/SaleOrder %287%29.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/SaleOrder .xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/SaleOrder.xls">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/SaleOrder1.xls">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/SaleOrder1.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/SaleOrder2.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/sales.xls">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/SD_TEMPLATE %281%29.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/SD_TEMPLATE %282%29.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/SD_TEMPLATE.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/SD_TEMPLATE1 %281%29.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/SD_TEMPLATE1.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/so.xls">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/so.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/StockAdjustmentExcelT R.S.AGENCY.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/StockAdjustmentExcelTemplate %281%29.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/StockAdjustmentExcelTemplate %284%29 %281%29.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="Uploads/StockAdjustmentExcelTemplate.xlsx">
+      <publishTime>08/30/2019 09:20:32</publishTime>
+    </File>
+    <File Include="UserControl/ucDropDown.ascx">
+      <publishTime>09/23/2019 22:48:39</publishTime>
+    </File>
+    <File Include="UserControl/ucRoleFilters.ascx">
+      <publishTime>10/12/2019 16:58:18</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/17/2019 21:15:35</publishTime>
+    </File>
+    <File Include="web.sitemap">
+      <publishTime>08/30/2019 09:20:33</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreamBell_DMS_WebApps", "CreamBell_DMS_WebApps\CreamBell_DMS_WebApps.csproj", "{F5F968A2-3187-40E2-AC49-7EE13F471542}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CreamBell.Database", "CreamBell.Database\CreamBell.Database.sqlproj", "{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		DebugLocal|Any CPU = DebugLocal|Any CPU
+		DebugLocal|x86 = DebugLocal|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5F968A2-3187-40E2-AC49-7EE13F471542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F968A2-3187-40E2-AC49-7EE13F471542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F968A2-3187-40E2-AC49-7EE13F471542}.Debug|x86.ActiveCfg = Debug|x86
+		{F5F968A2-3187-40E2-AC49-7EE13F471542}.Debug|x86.Build.0 = Debug|x86
+		{F5F968A2-3187-40E2-AC49-7EE13F471542}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F968A2-3187-40E2-AC49-7EE13F471542}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{F5F968A2-3187-40E2-AC49-7EE13F471542}.DebugLocal|x86.ActiveCfg = Debug|x86
+		{F5F968A2-3187-40E2-AC49-7EE13F471542}.DebugLocal|x86.Build.0 = Debug|x86
+		{F5F968A2-3187-40E2-AC49-7EE13F471542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F968A2-3187-40E2-AC49-7EE13F471542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5F968A2-3187-40E2-AC49-7EE13F471542}.Release|x86.ActiveCfg = Release|x86
+		{F5F968A2-3187-40E2-AC49-7EE13F471542}.Release|x86.Build.0 = Release|x86
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.Debug|x86.Build.0 = Debug|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.DebugLocal|Any CPU.Deploy.0 = Debug|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.DebugLocal|x86.ActiveCfg = Debug|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.DebugLocal|x86.Build.0 = Debug|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.DebugLocal|x86.Deploy.0 = Debug|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.Release|x86.ActiveCfg = Release|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.Release|x86.Build.0 = Release|Any CPU
+		{1CC9EF72-B462-4AF9-8334-D14F9D2A4D45}.Release|x86.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {699D2C2F-FCE2-4C05-9062-137CFD153C4E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,46 @@
+﻿USE [7200]
+GO
+/****** Object:  StoredProcedure [dbo].[ACX_USP_SaleRegisterPartyWise]    Script Date: 10/8/2019 11:04:26 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER Procedure [dbo].[ACX_USP_SaleRegisterPartyWise]
+ (
+ @SiteId NVARCHAR(max),
+ @FromDate date,
+ @ToDate date,
+ @CustomerGroup NVARCHAR(20),
+ @Customer NVARCHAR(20),
+ @BUCODE NVARCHAR(10)=''
+ )
+ as
+ Begin
+ 
+IF OBJECT_ID('TEMPDB..#TMPSITELIST') IS NOT NULL BEGIN DROP TABLE #TMPSITELIST END          
+CREATE TABLE #TMPSITELIST (SITEID NVARCHAR(20));                    
+IF LEN(@SITEID)>0                     
+BEGIN INSERT INTO #TMPSITELIST  SELECT ID FROM DBO.CommaDelimitedToTable(@SITEID,',')   END     
+
+ -------BUCODE-------  
+ IF OBJECT_ID('tempdb..#tmpBuCode') IS NOT NULL BEGIN DROP TABLE #tmpBuCode  END   
+ CREATE TABLE #tmpBuCode (BU_CODE NVARCHAR(10))  
+ IF LEN(@BUCODE)>0  
+ BEGIN INSERT INTO #tmpBuCode SELECT ID FROM DBO.CommaDelimitedToTable(@BUCODE,',') 
+ END  
+ ELSE
+ BEGIN INSERT INTO #tmpBuCode SELECT BU_CODE FROM AX.ACXSITEBUMAPPING WHERE SITEID  IN (SELECT SITEID FROM #TMPSITELIST)
+ END
+
+ SELECT [DIST. CODE],BU_CODE [BU CODE], BU_DESC [BU NAME],TRANTYPE, [INVOICE DATE], [INVOICE_NO],CUST_GROUP_CODE,[CUST GROUP], CUSTOMER_NAME,PRODUCT_NAME, 
+ BOX ,PCS, ISNULL(CAST(BOXPCS AS DECIMAL(10,2)),0) as [TotalBoxPCS] ,[TOTAL QTY] as QtyConv,[TD AMT],[PE AMT],
+ LTR, [LINE AMOUNT] as LINE_AMOUNT, DISC_AMOUNT, [DISC2 AMT]+ [SCHEME DISC AMT] AS [OTHER DISC AMT],[DISC VAL],
+  [TAX1 AMT], [TAX2 AMT] ,[TAX1 COMPONENT],[TAX2 COMPONENT], AMOUNT ,  (MRP*[TOTAL QTY]) as MRP_Value
+ FROM vw_saleRegister 
+ where [DIST. CODE]  IN (SELECT SITEID FROM #TMPSITELIST) and
+       [INVOICE DATE] >= @FromDate and  [INVOICE DATE] <= @ToDate AND 
+   [CUST_GROUP_CODE] like case when @CustomerGroup='' then '%' else @CustomerGroup end  
+   and CUSTOMER_CODE like case when @Customer='' then '%' else @Customer end
+   AND BU_CODE IN (SELECT BU_CODE FROM #tmpBuCode)
+    ORDER BY [INVOICE DATE] ASC , [INVOICE_NO] ASC
+ End

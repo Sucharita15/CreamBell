@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+ <siteMapNode url="" title=""  description="">
+   
+  <siteMapNode title="Home"  description="Home"  url="~/Home.aspx"/>
+  <siteMapNode title="Profile"  description="Profile"  url="~/frmUserProfile.aspx"/>
+   
+  <siteMapNode title="Master"  description="Master">
+    <siteMapNode url="~/frmCustomerPartyMaster.aspx" title="Customer/Party Master"  description="Customer/Party Master"  />
+    <siteMapNode url="~/frmCartOperatorMaster.aspx" title="Customer Operator Master"  description="Customer Operator Master"  />
+    <siteMapNode url="~/frmCustomerPartyGroup.aspx" title="Customer/Party Group"  description="Customer/Party Group"  />
+    <siteMapNode url="~/frmProductMaster.aspx" title="Product Master"  description="Product Master"  />
+ </siteMapNode>
+   
+    <siteMapNode title="Hierarchy"  description="Hierarchy">
+    <siteMapNode url="~/frmPSRDistributorLinkingMaster.aspx" title="PSR-Distributor Linking"  description="PSR-Distributor Linking"  />
+    <siteMapNode url="~/frmPSRBeatMaster.aspx" title="PSR-Beat Master"  description="PSR-Beat Master"  />
+    <siteMapNode url="~/frmPSRCustomerMaster.aspx" title="PSR-Customer Master"  description="PSR-Customer Master"  />
+ </siteMapNode>
+   
+    <siteMapNode title="Stock"  description="Stock">
+    <siteMapNode url="~/frmExcelUploadAdj.aspx" title="Opening Stock Upload"  description="Opening Stock Upload"  />
+    <siteMapNode url="~/frmCurrentStock.aspx" title="Current Stock"  description="Current Stock"  />
+    <siteMapNode url="~/frmStockAdjustment.aspx" title="Stock Adjustment"  description="Stock Adjustment"  />
+    <siteMapNode url="~/frmStockLocationTransfer.aspx" title="Stock Transfer"  description="Stock Transfer"  />
+ </siteMapNode>
+   
+    <siteMapNode title="Primary"  description="Primary">
+    <siteMapNode url="~/frmPurchaseIndentList.aspx" title="Purchase Indent List"  description="Purchase Indent List"  />
+    <siteMapNode url="~/frmPurchaseIndent.aspx" title="Purchase Indent"  description="Purchase Indent"  />
+    <siteMapNode url="~/frmPurchaseInvoiceReceipt.aspx" title="Purchase Invoice Receipt"  description="Purchase Invoice Receipt"  />
+    <siteMapNode url="~/frmFOCPurchaseInvoice.aspx" title="FOC Purchase Invoice"  description="FOC Purchase Invoice"  />
+  <siteMapNode url="~/frmPurchUnPostList.aspx" title="Purchase Invoice List"  description="Purchase Invoice List"  />
+    <siteMapNode url="~/frmPurchReceiptList.aspx" title="Purchase Invoice Posted List"  description="Purchase Invoice Posted List"  />
+    <siteMapNode url="~/frmPurchaseReturn.aspx" title="Manual Purchase Return"  description="Manual Purchase Return"  />
+    <siteMapNode url="~/frmPurchaseReversal.aspx" title="Purchase Reversal"  description="Purchase Reversal"  />
+  <siteMapNode url="~/frmPurchaseReturnList.aspx" title="Purchase Return List"  description="Purchase Return List"  />
+    <siteMapNode url="~/frmDistributorIncentiveReport.aspx" title="Sale Auto Claim Creation"  description="Sale Auto Claim Creation"  />
+    <siteMapNode url="~/frmPurchaseAutoClaim.aspx" title="Purchase Auto Claim Creation"  description="Purchase Auto Claim Creation"  />
+    <siteMapNode url="~/frmManualClaim.aspx" title="Manual Claim Creation"  description="Manual Claim Creation"  />
+ </siteMapNode>
+   
+   <siteMapNode title="Secondary"  description="Secondary">
+  <siteMapNode url="~/frmSaleOrder.aspx" title="Manual Sales Order"  description="Manual Sales Order"  />
+  <siteMapNode url="~/frmSalesOrderPreList.aspx" title="UnPosted Sale Order"  description="UnPosted Sale Order"  />
+     <siteMapNode url="~/frmLoadSheetCreation.aspx" title="Load Sheet Creation"  description="Load Sheet Creation"  />
+     <siteMapNode url="~/frmLoadSheetList.aspx" title="Load Sheet List"  description="Load Sheet List"  />
+     <siteMapNode url="~/frmInvoicePrepration.aspx" title="Invoice Preparation"  description="Invoice Preparation"  />
+     <siteMapNode url="~/frmSaleInvoiceReturn.aspx" title="Sale Reversal"  description="Sale Reversal"  />
+     <siteMapNode url="~/frmSOCreationIndent.aspx" title="SD Indent List"  description="SD Indent List"  />
+     <siteMapNode url="~/frmPendingPurchaseReciept.aspx" title="Pending Purchase Reciept"  description="Pending Purchase Reciept"  />
+</siteMapNode>
+   
+    <siteMapNode title="Reports"  description="Reports">
+    <siteMapNode url="~/frmPartyWiseSchemeDetailsonPurchaseRaterReport.aspx" title="Claim Scheme"  description="Claim Scheme"  />
+    <siteMapNode url="~/frmSaleRegisterDateWiseReport.aspx" title="Sale Register Date Wise Discount"  description="Sale Register Date Wise Discount"  />
+    <siteMapNode url="~/frmSaleRegisterReport.aspx" title="Sale Register Report"  description="Sale Register Report"  />
+    <siteMapNode url="~/frmPurchaseRegisterReport.aspx" title="Purchase Register Report"  description="Purchase Register Report"  />
+  <siteMapNode url="~/ReportSalesInvoice.aspx" title="Sale Invoice"  description="Sale Invoice"  />
+    <siteMapNode url="~/frmRunningSchemeDetail.aspx" title="Running Scheme Detail"  description="Running Scheme Detail"  />
+    <siteMapNode url="~/frmDiscountView.aspx" title="Discount View"  description="Discount View"  />
+    <siteMapNode url="~/frmOpenSalesOrderReport.aspx" title="Sales Order Detail"  description="Sales Order Detail"  />
+  <siteMapNode url="~/frmDailySaleRegister.aspx" title="Daily Sale Register"  description="Daily Sale Register"  />
+    <siteMapNode url="~/frmMonthlySaleRegister.aspx" title="Monthly Sale Register"  description="Monthly Sale Register"  />
+    <siteMapNode url="~/frmSalePartyItemWise.aspx" title="Sale Report Party/Item Wise"  description="Sale Report Party/Item Wise"  />
+    <siteMapNode url="~/frmSaleRegisterInvoiceWise.aspx" title="Sale Register Invoice Wise"  description="Sale Register Invoice Wise"  />
+  <siteMapNode url="~/frmSaleRegisterItemWise.aspx" title="Sale Register Item Wise"  description="Sale Register Item Wise"  />
+  <siteMapNode url="~/frmSaleRegisterPartyWise.aspx" title="Sale Register Party Wise"  description="Sale Register Party Wise"  />
+     <siteMapNode url="~/frmPartyWiseSaleSummary.aspx" title="Party Wise Sale Summary"  description="Party Wise Sale Summary"  />
+     <siteMapNode url="~/frmItemSKUWise.aspx" title="SKU Wise Sale"  description="SKU Wise Sale"  />
+     <siteMapNode url="~/frmItemTypeWiseSaleReport.aspx" title="Item Type Wise Sale"  description="Item Type Wise Sale"  />
+     <siteMapNode url="~/frmPartyWiseSaleReport.aspx" title="Party Wise Sale"  description="Party Wise Sale"  />
+     <siteMapNode url="~/frmItemWisePartySaleSummary.aspx" title="Item Wise Party Sale Summary"  description="Item Wise Party Sale Summary"  />
+    <siteMapNode url="~/frmVRSTransactionDetails.aspx" title="VRS Transaction Detail"  description="VRS Transaction Detail"  />
+    <siteMapNode url="~/frmCollectionReport.aspx" title="Collection Report"  description="Collection Report"  />
+    <siteMapNode url="~/frmSchemeDataReport.aspx" title="Scheme Data"  description="Scheme Data"  />
+  </siteMapNode>
+ 
+    <siteMapNode title="MIS Reports"  description="MIS Reports">
+    <siteMapNode url="~/frmDiscountPartyWiseReport.aspx" title="Discount Party Wise Report"  description="Discount Party Wise Report"  />
+    <siteMapNode url="~/frmNonBuyerReport.aspx" title="Non Buyer Report"  description="Non Buyer Report"  />
+    <siteMapNode url="~/frmKeyCustomerSale.aspx" title="Key Customer Sale"  description="Key Customer Sale"  />
+    <siteMapNode url="~/frmSaleRankingReport.aspx" title="Sale Ranking Report"  description="Sale Ranking Report"  />
+ </siteMapNode>
+   
+    <siteMapNode title="Claim Report"  description="Claim Report">
+    <siteMapNode url="~/frmPartyWiseSaleSummaryDisc.aspx" title="Discounted Outlet Sale"  description="Discounted Outlet Sale"  />
+    <siteMapNode url="~/frmSaleRegisterReport.aspx" title="Consolidated Sale Register"  description="Consolidated Sale Register"  />
+    <siteMapNode url="~/frmPurchaseRegister.aspx" title="Consolidated Purchase Register"  description="Consolidated Purchase Register"  />
+    <siteMapNode url="~/frmPartyWiseSchemeDetailsonPurchaseRaterReport.aspx" title="Consolidated Claim Scheme Report"  description="Consolidated Claim Scheme Report"  />
+    <siteMapNode url="~/frmTargetReport.aspx" title="Claim Report"  description="Claim Report"  />
+    <siteMapNode url="~/frmTargetSummaryReport.aspx" title="Claim Summary Report"  description="Claim Summary Report"  />
+    <siteMapNode url="~/frmTargetDetailReport.aspx" title="Claim Detail Report"  description="Claim Detail Report"  />
+   </siteMapNode>
+   
+     <siteMapNode title="Collection"  description="Collection">
+    <siteMapNode url="~/frmCollectionEntry.aspx" title="Collection Entry"  description="Collection Entry"  />
+    </siteMapNode>
+   
+   <siteMapNode title="LogOut"  description="LogOut"  url="~/Login.aspx"/>
+ 
+ </siteMapNode>
+</siteMap>
